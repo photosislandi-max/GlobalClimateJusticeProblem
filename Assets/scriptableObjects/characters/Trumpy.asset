@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a839a1938e1dc744825ac3c1f2c426f, type: 3}
+  m_Name: Trumpy
+  m_EditorClassIdentifier: 
+  charactername: Trump
+  issuedescription: MAGA
+  characterArtwork: {fileID: -1800627781320891985, guid: 34df4bdba767fd44992e0b89a42fb792, type: 3}
+  speechBubbleArtwork: {fileID: -7483706513750965665, guid: 4fc190a44ee6e2c4a852fdd5416be4fc, type: 3}
+  yesClimateBarInt: -10
+  yesJusticeBarInt: -10
+  yesEconomyBarInt: -1000
+  noClimateBarInt: -100
+  noJusticeBarInt: -100
+  noEconomyBarInt: -100
