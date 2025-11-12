@@ -8,10 +8,16 @@ public class characterManager : MonoBehaviour
     public int currentCharacterIndex = 0; //Index to track the current character
     public scriptableCharacters currentCharacter; //Reference to the current character
     public void initCharacterArray()
+        {
+            characters = Resources.LoadAll<scriptableCharacters>("scriptableObjects/Characters");
+            if (characters == null || characters.Length == 0)
             {
-                characters = Resources.LoadAll<scriptableCharacters>("scriptableObjects/Characters");
-                currentCharacter = characters[currentCharacterIndex];
+                Debug.Log("No characters found in Resources/scriptableObjects/Characters");
+                return;
             }
+            
+            currentCharacter = characters[currentCharacterIndex];
+        }
     void Start()
     {
         initCharacterArray();

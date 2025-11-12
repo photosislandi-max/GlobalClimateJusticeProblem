@@ -4511,7 +4511,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characters: []
   currentCharacterIndex: 0
-  currentCharacter: {fileID: 0}
+  currentCharacter: {fileID: 11400000, guid: dc8f1fccdc47b2048badc09d6097ac55, type: 2}
 --- !u!4 &2103636604
 Transform:
   m_ObjectHideFlags: 0

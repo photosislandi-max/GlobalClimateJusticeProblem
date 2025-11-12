@@ -4,6 +4,7 @@ using UnityEngine.UI;
 
 public class ButtonChecker : MonoBehaviour
 {
+    // public characterManager ManagerInput; 
     public characterManager Manager;
     public scriptableCharacters characterData;
     public scriptableCharacters GetCharacterData()
@@ -21,14 +22,36 @@ public class ButtonChecker : MonoBehaviour
         //   Manager = FindObjectOfType<characterManager>();
 
         // Now it's safe to read Manager.currentCharacter
-        characterData = Manager != null ? Manager.currentCharacter : null; // Get the current character data
-        //Debug.Log("Character Data Loaded: " + (characterData != null ? characterData.charactername : "No Data"));
+        // characterData = Manager != null ? Manager.currentCharacter : null; // Get the current character data
+        // Debug.Log("Character Data Loaded: " + (characterData != null ? characterData.charactername : "No Data"));
+        // if (ManagerInput != null)
+        //     Manager = ManagerInput;
+        // else
+        //     Manager = Object.FindFirstObjectByType<characterManager>();
+
+        // if (Manager == null)
+        // {
+        //     Debug.LogError("characterManager not found in the scene.");
+        //     characterData = null;
+        //     return;
+        // }
+        // if (Manager.characters == null || Manager.characters.Length == 0)
+        // {
+        //     Manager.initCharacterArray();
+        // }
+
+        // Manager.currentCharacterIndex = MathF.Clamp(Manager.currentCharacterIndex, 0, MathF.Max(Manager.characters.Length - 1));
+        // characterData = Manager.currentCharacter != null ? Manager.currentCharacter : Manager.characters[Manager.currentCharacterIndex];
     }
 
 
     void Start()
     {
-        
+        if (Manager == null)
+        {
+            Manager = Object.FindFirstObjectByType<characterManager>();
+        }
+        characterData = Manager.currentCharacter;
     }
     public void OnRedButtonPressed()
     {
