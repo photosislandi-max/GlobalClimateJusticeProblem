@@ -5,6 +5,7 @@ using UnityEngine;
 public class characterManager : MonoBehaviour
 {
     public GameObject OfficePanel;
+    public GameObject NewsPanel;
     public scriptableCharacters[]characters; //Array to hold our characters
     public int currentCharacterIndex = 0; //Index to track the current character
     public scriptableCharacters currentCharacter; //Reference to the current character
@@ -40,6 +41,7 @@ public class characterManager : MonoBehaviour
         if (currentCharacterIndex == 3)
         {
             OfficePanel.SetActive(false);
+            NewsPanel.SetActive(true);
         }
     }
 }
