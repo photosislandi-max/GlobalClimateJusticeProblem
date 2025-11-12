@@ -5,6 +5,7 @@ using TMPro;
 public class characterDisplay : MonoBehaviour
 
 {
+    public characterManager Manager;
     public scriptableCharacters characterData;
     public scriptableCharacters GetCharacterData()
 {
@@ -28,23 +29,44 @@ public class characterDisplay : MonoBehaviour
 
     void Start()
     {
-        issueDescription.text = characterData.issuedescription;
+        characterData = Manager.currentCharacter;
 
-        characterArtwork.sprite = characterData.characterArtwork;
-
-        speechBubbleArtwork.sprite = characterData.speechBubbleArtwork;
-
-        yesclimateEffect.text = characterData.yesClimateBarInt.ToString();
         
-        yesglobalJusticeEffect.text = characterData.yesJusticeBarInt.ToString();
+    }
+    
+    void Update()
+    {
+        var data = Manager.currentCharacter;
 
-        yeseconomyEffect.text = characterData.yesEconomyBarInt.ToString();
+        issueDescription.text = data.issuedescription;
+
+        characterArtwork.sprite = data.characterArtwork;
+        speechBubbleArtwork.sprite = data.speechBubbleArtwork;
+
+        yesclimateEffect.text = data.yesClimateBarInt.ToString();
+        yesglobalJusticeEffect.text = data.yesJusticeBarInt.ToString();
+        yeseconomyEffect.text = data.yesEconomyBarInt.ToString();
+
+        noclimateEffect.text = data.noClimateBarInt.ToString();
+        noglobalJusticeEffect.text = data.noJusticeBarInt.ToString();
+        noeconomyEffect.text = data.noEconomyBarInt.ToString();
+        // issueDescription.text = characterData.issuedescription;
+
+        // characterArtwork.sprite = characterData.characterArtwork;
+
+        // speechBubbleArtwork.sprite = characterData.speechBubbleArtwork;
+
+        // yesclimateEffect.text = characterData.yesClimateBarInt.ToString();
+
+        // yesglobalJusticeEffect.text = characterData.yesJusticeBarInt.ToString();
+
+        // yeseconomyEffect.text = characterData.yesEconomyBarInt.ToString();
 
 
-        noclimateEffect.text = characterData.noClimateBarInt.ToString();
+        // noclimateEffect.text = characterData.noClimateBarInt.ToString();
 
-        noglobalJusticeEffect.text = characterData.noJusticeBarInt.ToString();
+        // noglobalJusticeEffect.text = characterData.noJusticeBarInt.ToString();
 
-        noeconomyEffect.text = characterData.noEconomyBarInt.ToString();
+        // noeconomyEffect.text = characterData.noEconomyBarInt.ToString();
     }
 }

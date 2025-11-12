@@ -3614,6 +3614,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e303e1ff1b7020a49bde3a555d5bbde0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Manager: {fileID: 2103636603}
   characterData: {fileID: 11400000, guid: 377680a218271404dacf8064c7a58b7b, type: 2}
   issueDescription: {fileID: 86406242}
   characterArtwork: {fileID: 795683527}
@@ -4509,6 +4510,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 704fb53675e0e234f9b6b315c1548806, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OfficePanel: {fileID: 1386231550}
   characters: []
   currentCharacterIndex: 0
   currentCharacter: {fileID: 11400000, guid: dc8f1fccdc47b2048badc09d6097ac55, type: 2}

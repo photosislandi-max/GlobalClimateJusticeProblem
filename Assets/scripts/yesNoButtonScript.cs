@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -57,17 +58,27 @@ public class ButtonChecker : MonoBehaviour
     {
         animator.SetTrigger("redpress");
 
-        staticBarIntergers.climateBar+= characterData.noClimateBarInt;
-        staticBarIntergers.justiceBar+= characterData.noJusticeBarInt;
-        staticBarIntergers.EconomyBar+= characterData.noEconomyBarInt;
+        Manager.currentCharacterIndex++;
+        Manager.currentCharacter = Manager.characters[Manager.currentCharacterIndex];
+
+        characterData = Manager.currentCharacter;
+        UnityEngine.Debug.Log("Red Button Pressed. Current Character: " + Manager.currentCharacterIndex);
+        staticBarIntergers.climateBar += characterData.noClimateBarInt;
+        staticBarIntergers.justiceBar += characterData.noJusticeBarInt;
+        staticBarIntergers.EconomyBar += characterData.noEconomyBarInt;
     }
 
     public void OnGreenButtonPressed()
     {
         animator.SetTrigger("greenpress");
+
+        Manager.currentCharacterIndex++;
+        Manager.currentCharacter = Manager.characters[Manager.currentCharacterIndex];
+
+        characterData = Manager.currentCharacter;
         
-        staticBarIntergers.climateBar+= characterData.yesClimateBarInt;
-        staticBarIntergers.justiceBar+= characterData.yesJusticeBarInt;
+        staticBarIntergers.climateBar += characterData.yesClimateBarInt;
+        staticBarIntergers.justiceBar += characterData.yesJusticeBarInt;
         staticBarIntergers.EconomyBar += characterData.yesEconomyBarInt;
         
     }
