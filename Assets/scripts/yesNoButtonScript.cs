@@ -1,9 +1,11 @@
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class ButtonChecker : MonoBehaviour
 {
+    // public characterManager ManagerInput; 
     public characterManager Manager;
     public scriptableCharacters characterData;
     public scriptableCharacters GetCharacterData()
@@ -21,30 +23,62 @@ public class ButtonChecker : MonoBehaviour
         //   Manager = FindObjectOfType<characterManager>();
 
         // Now it's safe to read Manager.currentCharacter
-        characterData = Manager != null ? Manager.currentCharacter : null; // Get the current character data
-        //Debug.Log("Character Data Loaded: " + (characterData != null ? characterData.charactername : "No Data"));
+        // characterData = Manager != null ? Manager.currentCharacter : null; // Get the current character data
+        // Debug.Log("Character Data Loaded: " + (characterData != null ? characterData.charactername : "No Data"));
+        // if (ManagerInput != null)
+        //     Manager = ManagerInput;
+        // else
+        //     Manager = Object.FindFirstObjectByType<characterManager>();
+
+        // if (Manager == null)
+        // {
+        //     Debug.LogError("characterManager not found in the scene.");
+        //     characterData = null;
+        //     return;
+        // }
+        // if (Manager.characters == null || Manager.characters.Length == 0)
+        // {
+        //     Manager.initCharacterArray();
+        // }
+
+        // Manager.currentCharacterIndex = MathF.Clamp(Manager.currentCharacterIndex, 0, MathF.Max(Manager.characters.Length - 1));
+        // characterData = Manager.currentCharacter != null ? Manager.currentCharacter : Manager.characters[Manager.currentCharacterIndex];
     }
 
 
     void Start()
     {
-        
+        if (Manager == null)
+        {
+            Manager = Object.FindFirstObjectByType<characterManager>();
+        }
+        characterData = Manager.currentCharacter;
     }
     public void OnRedButtonPressed()
     {
         animator.SetTrigger("redpress");
 
-        staticBarIntergers.climateBar+= characterData.noClimateBarInt;
-        staticBarIntergers.justiceBar+= characterData.noJusticeBarInt;
-        staticBarIntergers.EconomyBar+= characterData.noEconomyBarInt;
+        Manager.currentCharacterIndex++;
+        Manager.currentCharacter = Manager.characters[Manager.currentCharacterIndex];
+
+        characterData = Manager.currentCharacter;
+        UnityEngine.Debug.Log("Red Button Pressed. Current Character: " + Manager.currentCharacterIndex);
+        staticBarIntergers.climateBar += characterData.noClimateBarInt;
+        staticBarIntergers.justiceBar += characterData.noJusticeBarInt;
+        staticBarIntergers.EconomyBar += characterData.noEconomyBarInt;
     }
 
     public void OnGreenButtonPressed()
     {
         animator.SetTrigger("greenpress");
+
+        Manager.currentCharacterIndex++;
+        Manager.currentCharacter = Manager.characters[Manager.currentCharacterIndex];
+
+        characterData = Manager.currentCharacter;
         
-        staticBarIntergers.climateBar+= characterData.yesClimateBarInt;
-        staticBarIntergers.justiceBar+= characterData.yesJusticeBarInt;
+        staticBarIntergers.climateBar += characterData.yesClimateBarInt;
+        staticBarIntergers.justiceBar += characterData.yesJusticeBarInt;
         staticBarIntergers.EconomyBar += characterData.yesEconomyBarInt;
         
     }
