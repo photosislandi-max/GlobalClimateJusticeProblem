@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class ButtonChecker : MonoBehaviour
 {
-    // public characterManager ManagerInput; 
+    
     public characterManager Manager;
     public scriptableCharacters characterData;
     public scriptableCharacters GetCharacterData()
@@ -18,34 +18,9 @@ public class ButtonChecker : MonoBehaviour
 
     void Awake()
     {
-        // If Manager wasn't wired in the inspector, try to find one in the scene
-        // if (Manager == null)
-        //   Manager = FindObjectOfType<characterManager>();
-
-        // Now it's safe to read Manager.currentCharacter
-        // characterData = Manager != null ? Manager.currentCharacter : null; // Get the current character data
-        // Debug.Log("Character Data Loaded: " + (characterData != null ? characterData.charactername : "No Data"));
-        // if (ManagerInput != null)
-        //     Manager = ManagerInput;
-        // else
-        //     Manager = Object.FindFirstObjectByType<characterManager>();
-
-        // if (Manager == null)
-        // {
-        //     Debug.LogError("characterManager not found in the scene.");
-        //     characterData = null;
-        //     return;
-        // }
-        // if (Manager.characters == null || Manager.characters.Length == 0)
-        // {
-        //     Manager.initCharacterArray();
-        // }
-
-        // Manager.currentCharacterIndex = MathF.Clamp(Manager.currentCharacterIndex, 0, MathF.Max(Manager.characters.Length - 1));
-        // characterData = Manager.currentCharacter != null ? Manager.currentCharacter : Manager.characters[Manager.currentCharacterIndex];
     }
 
-
+    /* Initializes the character data on start */
     void Start()
     {
         if (Manager == null)
@@ -54,32 +29,33 @@ public class ButtonChecker : MonoBehaviour
         }
         characterData = Manager.currentCharacter;
     }
+
+    /* Updates the character data based on the current character index in the manager */
+    void updateCharacterData()
+    {
+        Manager.currentCharacter = Manager.characters[Manager.currentCharacterIndex];
+        characterData = Manager.currentCharacter;
+    }
     public void OnRedButtonPressed()
     {
         animator.SetTrigger("redpress");
 
-        Manager.currentCharacterIndex++;
-        Manager.currentCharacter = Manager.characters[Manager.currentCharacterIndex];
-
-        characterData = Manager.currentCharacter;
-        UnityEngine.Debug.Log("Red Button Pressed. Current Character: " + Manager.currentCharacterIndex);
         staticBarIntergers.climateBar += characterData.noClimateBarInt;
         staticBarIntergers.justiceBar += characterData.noJusticeBarInt;
         staticBarIntergers.EconomyBar += characterData.noEconomyBarInt;
+        Manager.currentCharacterIndex++;                                                                          // Increment the character index to move to the next character
+        updateCharacterData();                                                                                    // Update character data after incrementing the index
     }
 
     public void OnGreenButtonPressed()
     {
         animator.SetTrigger("greenpress");
 
-        Manager.currentCharacterIndex++;
-        Manager.currentCharacter = Manager.characters[Manager.currentCharacterIndex];
-
-        characterData = Manager.currentCharacter;
-        
         staticBarIntergers.climateBar += characterData.yesClimateBarInt;
         staticBarIntergers.justiceBar += characterData.yesJusticeBarInt;
         staticBarIntergers.EconomyBar += characterData.yesEconomyBarInt;
+        Manager.currentCharacterIndex++;                                                                          // Increment the character index to move to the next character
+        updateCharacterData();                                                                                    // Update character data after incrementing the index
         
     }
 }
