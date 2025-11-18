@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a839a1938e1dc744825ac3c1f2c426f, type: 3}
+  m_Name: 02frenchNyeTheScienceGuy
+  m_EditorClassIdentifier: 
+  charactername: FrenchMan
+  issuedescription: I will (when the slow devs implement it) give you the option
+    to invest in R&D
+  characterArtwork: {fileID: 4991248251315979534, guid: 236b2aab1a4ad1f40a782b5619ecba2f, type: 3}
+  speechBubbleArtwork: {fileID: -7483706513750965665, guid: 4fc190a44ee6e2c4a852fdd5416be4fc, type: 3}
+  yesClimateBarInt: 0
+  yesJusticeBarInt: 0
+  yesEconomyBarInt: -1
+  noClimateBarInt: 0
+  noJusticeBarInt: 0
+  noEconomyBarInt: 0
+  videoNoButton: {fileID: 32900000, guid: 0ee27c2fa1035744a9f95c59cf8a016c, type: 3}

@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a839a1938e1dc744825ac3c1f2c426f, type: 3}
+  m_Name: 06ethiopia
+  m_EditorClassIdentifier: 
+  charactername: EthiopiaMan
+  issuedescription: Ethiopia already has hydropower but wishes to expand, help them
+    build even more to create even more green energy!
+  characterArtwork: {fileID: -823271847917759706, guid: 814e2519f750c7f4eafebbc25c7f7b95, type: 3}
+  speechBubbleArtwork: {fileID: -7483706513750965665, guid: 4fc190a44ee6e2c4a852fdd5416be4fc, type: 3}
+  yesClimateBarInt: 8
+  yesJusticeBarInt: 9
+  yesEconomyBarInt: -2
+  noClimateBarInt: 0
+  noJusticeBarInt: -7
+  noEconomyBarInt: 0
+  videoNoButton: {fileID: 32900000, guid: a74730068a68adc43b49832fb730d7a9, type: 3}

@@ -1,0 +1,816 @@
+fileFormatVersion: 2
+guid: 4d7e1628a2b3363438f52127668e811c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2234782260843168998
+    second: Female_SuitAS_0
+  - first:
+      213: -1844080031414853897
+    second: Female_SuitAS_1
+  - first:
+      213: 747681884615839828
+    second: Female_SuitAS_2
+  - first:
+      213: 5235506496322339149
+    second: Female_SuitAS_3
+  - first:
+      213: 5958305930107678331
+    second: Female_SuitAS_4
+  - first:
+      213: -5455918163683502203
+    second: Female_SuitAS_5
+  - first:
+      213: -6292905070322119606
+    second: Female_SuitAS_6
+  - first:
+      213: -3036985185255407892
+    second: Female_SuitAS_7
+  - first:
+      213: -1017057657038284306
+    second: Female_SuitAS_8
+  - first:
+      213: -9116343895517527011
+    second: Female_SuitAS_9
+  - first:
+      213: -8215781237976023101
+    second: Female_SuitAS_10
+  - first:
+      213: 4667497167748500735
+    second: Female_SuitAS_11
+  - first:
+      213: -6475801358676152225
+    second: Female_SuitAS_12
+  - first:
+      213: -3903696573266009485
+    second: Female_SuitAS_13
+  - first:
+      213: 5154847323774111953
+    second: Female_SuitAS_14
+  - first:
+      213: -4292431195750098056
+    second: Female_SuitAS_15
+  - first:
+      213: -1177798415411447851
+    second: Female_SuitAS_16
+  - first:
+      213: -8034481884921019164
+    second: Female_SuitAS_17
+  - first:
+      213: -7908085840862556207
+    second: Female_SuitAS_18
+  - first:
+      213: 3566002619664777463
+    second: Female_SuitAS_19
+  - first:
+      213: 1378880853247642174
+    second: Female_SuitAS_20
+  - first:
+      213: -656932932314294953
+    second: Female_SuitAS_21
+  - first:
+      213: -6772855639622746623
+    second: Female_SuitAS_22
+  - first:
+      213: 1177786074641646974
+    second: Female_SuitAS_23
+  - first:
+      213: 1775534561431687000
+    second: Female_SuitAS_24
+  - first:
+      213: -4239318840028277675
+    second: Female_SuitAS_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Female_SuitAS_0
+      rect:
+        serializedVersion: 2
+        x: 1229
+        y: 4489
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1b3918cf557cf0e0800000000000000
+      internalID: -2234782260843168998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female_SuitAS_1
+      rect:
+        serializedVersion: 2
+        x: 1399
+        y: 4479
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fe50265bf28866e0800000000000000
+      internalID: -1844080031414853897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female_SuitAS_2
+      rect:
+        serializedVersion: 2
+        x: 1849
+        y: 69
+        width: 1442
+        height: 4782
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 450958176bc406a00800000000000000
+      internalID: 747681884615839828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female_SuitAS_3
+      rect:
+        serializedVersion: 2
+        x: 3339
+        y: 4469
+        width: 152
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d410b846b6148a840800000000000000
+      internalID: 5235506496322339149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female_SuitAS_4
+      rect:
+        serializedVersion: 2
+        x: 3559
+        y: 4449
+        width: 142
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7eeb2bcca720b250800000000000000
+      internalID: 5958305930107678331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female_SuitAS_5
+      rect:
+        serializedVersion: 2
+        x: 6369
+        y: 69
+        width: 1922
+        height: 4782
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5871b0a365fa844b0800000000000000
+      internalID: -5455918163683502203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female_SuitAS_6
+      rect:
+        serializedVersion: 2
+        x: 11139
+        y: 69
+        width: 2152
+        height: 4782
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4c02360e2c1ba8a0800000000000000
+      internalID: -6292905070322119606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female_SuitAS_7
+      rect:
+        serializedVersion: 2
+        x: 16139
+        y: 69
+        width: 2152
+        height: 4782
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cee3abc80167ad5d0800000000000000
+      internalID: -3036985185255407892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female_SuitAS_8
+      rect:
+        serializedVersion: 2
+        x: 21199
+        y: 69
+        width: 2092
+        height: 4782
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee95424137fa2e1f0800000000000000
+      internalID: -1017057657038284306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female_SuitAS_9
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 4359
+        width: 122
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d148069078d3c7180800000000000000
+      internalID: -9116343895517527011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female_SuitAS_10
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 4269
+        width: 122
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cfbe1e3e7eabfd80800000000000000
+      internalID: -8215781237976023101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female_SuitAS_11
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 4359
+        width: 102
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffc8ac1d1f746c040800000000000000
+      internalID: 4667497167748500735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female_SuitAS_12
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 4269
+        width: 132
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f50bd1c79f45126a0800000000000000
+      internalID: -6475801358676152225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female_SuitAS_13
+      rect:
+        serializedVersion: 2
+        x: 1269
+        y: 4209
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 372e19736a843d9c0800000000000000
+      internalID: -3903696573266009485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female_SuitAS_14
+      rect:
+        serializedVersion: 2
+        x: 3449
+        y: 3189
+        width: 992
+        height: 1132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d0dde45452b98740800000000000000
+      internalID: 5154847323774111953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female_SuitAS_15
+      rect:
+        serializedVersion: 2
+        x: 4379
+        y: 4159
+        width: 142
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87b928ad1983e64c0800000000000000
+      internalID: -4292431195750098056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female_SuitAS_16
+      rect:
+        serializedVersion: 2
+        x: 3369
+        y: 3379
+        width: 132
+        height: 242
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d7f168d49e97afe0800000000000000
+      internalID: -1177798415411447851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female_SuitAS_17
+      rect:
+        serializedVersion: 2
+        x: 3979
+        y: 2999
+        width: 72
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e4c8fe4b49cf7090800000000000000
+      internalID: -8034481884921019164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female_SuitAS_18
+      rect:
+        serializedVersion: 2
+        x: 4139
+        y: 2999
+        width: 72
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1df471a93d5d04290800000000000000
+      internalID: -7908085840862556207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female_SuitAS_19
+      rect:
+        serializedVersion: 2
+        x: 3999
+        y: 2979
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f04b353d7cfc7130800000000000000
+      internalID: 3566002619664777463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female_SuitAS_20
+      rect:
+        serializedVersion: 2
+        x: 4139
+        y: 2949
+        width: 62
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3ac96594d4c22310800000000000000
+      internalID: 1378880853247642174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female_SuitAS_21
+      rect:
+        serializedVersion: 2
+        x: 3999
+        y: 2889
+        width: 52
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75596288afa12e6f0800000000000000
+      internalID: -656932932314294953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female_SuitAS_22
+      rect:
+        serializedVersion: 2
+        x: 3449
+        y: 2649
+        width: 142
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10ef84d0eabf102a0800000000000000
+      internalID: -6772855639622746623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female_SuitAS_23
+      rect:
+        serializedVersion: 2
+        x: 3689
+        y: 2629
+        width: 162
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e75ca68d136585010800000000000000
+      internalID: 1177786074641646974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female_SuitAS_24
+      rect:
+        serializedVersion: 2
+        x: 4169
+        y: 2609
+        width: 142
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85f8094c647f3a810800000000000000
+      internalID: 1775534561431687000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female_SuitAS_25
+      rect:
+        serializedVersion: 2
+        x: 4409
+        y: 2589
+        width: 162
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5545e72d9f9ea25c0800000000000000
+      internalID: -4239318840028277675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female_SuitAS_26
+      rect:
+        serializedVersion: 2
+        x: 1454
+        y: 0
+        width: 2406
+        height: 4962
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45b7b3cb36caff944aa364b16b1e11b8
+      internalID: -735105691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 770c1e41564273047a83d96ffe9cac61
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Female_SuitAS_0: -2234782260843168998
+      Female_SuitAS_1: -1844080031414853897
+      Female_SuitAS_10: -8215781237976023101
+      Female_SuitAS_11: 4667497167748500735
+      Female_SuitAS_12: -6475801358676152225
+      Female_SuitAS_13: -3903696573266009485
+      Female_SuitAS_14: 5154847323774111953
+      Female_SuitAS_15: -4292431195750098056
+      Female_SuitAS_16: -1177798415411447851
+      Female_SuitAS_17: -8034481884921019164
+      Female_SuitAS_18: -7908085840862556207
+      Female_SuitAS_19: 3566002619664777463
+      Female_SuitAS_2: 747681884615839828
+      Female_SuitAS_20: 1378880853247642174
+      Female_SuitAS_21: -656932932314294953
+      Female_SuitAS_22: -6772855639622746623
+      Female_SuitAS_23: 1177786074641646974
+      Female_SuitAS_24: 1775534561431687000
+      Female_SuitAS_25: -4239318840028277675
+      Female_SuitAS_26: -735105691
+      Female_SuitAS_3: 5235506496322339149
+      Female_SuitAS_4: 5958305930107678331
+      Female_SuitAS_5: -5455918163683502203
+      Female_SuitAS_6: -6292905070322119606
+      Female_SuitAS_7: -3036985185255407892
+      Female_SuitAS_8: -1017057657038284306
+      Female_SuitAS_9: -9116343895517527011
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
