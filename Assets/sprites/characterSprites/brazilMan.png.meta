@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 2493f870406884c4486ee34ef9e6770f
+guid: c54081acd5110f0468f2fb3c31f9a25f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6044462803778161908
-    second: China_man_pixel_art_0
-  - first:
-      213: 5749416827265880924
-    second: China_man_pixel_art_1
+      213: -3704969827463629111
+    second: brazilMan_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -54,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 1000
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -103,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: China_man_pixel_art_0
+      name: brazilMan_0
       rect:
         serializedVersion: 2
-        x: 39
-        y: 49
+        x: 169
+        y: 29
         width: 1512
-        height: 4862
+        height: 4842
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,30 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c03bdbada11cd1ca0800000000000000
-      internalID: -6044462803778161908
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: China_man_pixel_art_1
-      rect:
-        serializedVersion: 2
-        x: 1749
-        y: 3439
-        width: 11
-        height: 272
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c5316d684280acf40800000000000000
-      internalID: 5749416827265880924
+      spriteID: 9c67d7a529d459cc0800000000000000
+      internalID: -3704969827463629111
       vertices: []
       indices: 
       edges: []
@@ -160,8 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      China_man_pixel_art_0: -6044462803778161908
-      China_man_pixel_art_1: 5749416827265880924
+      brazilMan_0: -3704969827463629111
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

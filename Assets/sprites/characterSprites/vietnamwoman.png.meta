@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 19108eee7dc54014899898d9882fe003
+guid: 58d6c96727729ee46866782b5f879e52
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5376354498955497639
-    second: lefthandsprite3_0
+      213: -4106889282318333101
+    second: vietnamwoman_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: lefthandsprite3_0
+      name: vietnamwoman_0
       rect:
         serializedVersion: 2
-        x: 399
-        y: 0
-        width: 1692
-        height: 3021
+        x: 1849
+        y: 69
+        width: 1442
+        height: 4602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 95f2f2f711a5365b0800000000000000
-      internalID: -5376354498955497639
+      spriteID: 35b8e8bf4f56107c0800000000000000
+      internalID: -4106889282318333101
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      lefthandsprite3_0: -5376354498955497639
+      vietnamwoman_0: -4106889282318333101
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

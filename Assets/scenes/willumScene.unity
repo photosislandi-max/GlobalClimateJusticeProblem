@@ -230,7 +230,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2bbbf7f084dfa74f8deb7b6d1669d33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Manager: {fileID: 0}
+  characterManager: {fileID: 0}
   characterData: {fileID: 0}
   redButton: {fileID: 826224957}
   greenButton: {fileID: 2016226977}
@@ -388,7 +388,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &65017354
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1929,7 +1929,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2bbbf7f084dfa74f8deb7b6d1669d33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Manager: {fileID: 2103636603}
+  characterManager: {fileID: 0}
   characterData: {fileID: 11400000, guid: 377680a218271404dacf8064c7a58b7b, type: 2}
   redButton: {fileID: 826224957}
   greenButton: {fileID: 2016226977}
@@ -3853,6 +3853,8 @@ MonoBehaviour:
   noclimateEffect: {fileID: 24288634}
   noglobalJusticeEffect: {fileID: 1041656044}
   noeconomyEffect: {fileID: 1154812275}
+  characterVideo: {fileID: 0}
+  videoTexture: {fileID: 0}
 --- !u!1 &1793536657
 GameObject:
   m_ObjectHideFlags: 0
@@ -3964,7 +3966,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2bbbf7f084dfa74f8deb7b6d1669d33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Manager: {fileID: 0}
+  characterManager: {fileID: 0}
   characterData: {fileID: 0}
   redButton: {fileID: 826224957}
   greenButton: {fileID: 2016226977}
@@ -4493,7 +4495,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2bbbf7f084dfa74f8deb7b6d1669d33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Manager: {fileID: 2103636603}
+  characterManager: {fileID: 0}
   characterData: {fileID: 11400000, guid: 377680a218271404dacf8064c7a58b7b, type: 2}
   redButton: {fileID: 826224957}
   greenButton: {fileID: 2016226977}

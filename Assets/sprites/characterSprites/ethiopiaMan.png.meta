@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: f21180e6fd477e344953cc66fc3337fa
+guid: 9e8386e3a945cdd4e8d6cc075aa05425
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4111235737880591528
-    second: lefthandsprite3 - Copy_0
+      213: 7898463608768064330
+    second: ethiopiaMan_0
+  - first:
+      213: -2960096738872837081
+    second: ethiopiaMan_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: lefthandsprite3 - Copy_0
+      name: ethiopiaMan_0
       rect:
         serializedVersion: 2
-        x: 399
-        y: 0
-        width: 1692
-        height: 3021
+        x: 1739
+        y: 89
+        width: 2402
+        height: 4842
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +118,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8538cbfe0e4f1f6c0800000000000000
-      internalID: -4111235737880591528
+      spriteID: a4b68f7edcafc9d60800000000000000
+      internalID: 7898463608768064330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ethiopiaMan_1
+      rect:
+        serializedVersion: 2
+        x: 6739
+        y: 89
+        width: 1512
+        height: 4842
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72c31b203bf9be6d0800000000000000
+      internalID: -2960096738872837081
       vertices: []
       indices: 
       edges: []
@@ -135,7 +160,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      lefthandsprite3 - Copy_0: -4111235737880591528
+      ethiopiaMan_0: 7898463608768064330
+      ethiopiaMan_1: -2960096738872837081
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

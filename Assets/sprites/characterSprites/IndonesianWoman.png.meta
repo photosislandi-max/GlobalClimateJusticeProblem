@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 2081f3f82d91d1142a8a69afdf1cf0db
+guid: ffaec516cf017784b822c94098c0c2a4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1551901561461693083
-    second: namibiaCharacter_0
+      213: 4035765520233981170
+    second: IndonesianWoman_0
+  - first:
+      213: 2905193302993321407
+    second: IndonesianWoman_1
+  - first:
+      213: -5114805614248211441
+    second: IndonesianWoman_2
+  - first:
+      213: -8550934597285365649
+    second: IndonesianWoman_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +109,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: namibiaCharacter_0
+      name: IndonesianWoman_0
       rect:
         serializedVersion: 2
-        x: 1739
-        y: 89
-        width: 1512
-        height: 4822
+        x: 1199
+        y: 69
+        width: 2092
+        height: 4532
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +124,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 565a3be80c9867ae0800000000000000
-      internalID: -1551901561461693083
+      spriteID: 2f4e056bb5be10830800000000000000
+      internalID: 4035765520233981170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndonesianWoman_1
+      rect:
+        serializedVersion: 2
+        x: 4969
+        y: 4139
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbdb2ccaae1515820800000000000000
+      internalID: 2905193302993321407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndonesianWoman_2
+      rect:
+        serializedVersion: 2
+        x: 6199
+        y: 69
+        width: 2092
+        height: 4532
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0ccf8ba46f8409b0800000000000000
+      internalID: -5114805614248211441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndonesianWoman_3
+      rect:
+        serializedVersion: 2
+        x: 9969
+        y: 4139
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f68353fd94af45980800000000000000
+      internalID: -8550934597285365649
       vertices: []
       indices: 
       edges: []
@@ -135,7 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      namibiaCharacter_0: -1551901561461693083
+      IndonesianWoman_0: 4035765520233981170
+      IndonesianWoman_1: 2905193302993321407
+      IndonesianWoman_2: -5114805614248211441
+      IndonesianWoman_3: -8550934597285365649
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

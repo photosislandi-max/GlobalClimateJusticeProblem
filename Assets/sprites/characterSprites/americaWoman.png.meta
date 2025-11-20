@@ -1,0 +1,793 @@
+fileFormatVersion: 2
+guid: 762e167ba24a1ad458ba8cc9ed28edd7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2261535627715175490
+    second: americaWoman_0
+  - first:
+      213: 4400882100294480129
+    second: americaWoman_1
+  - first:
+      213: 2424230925201744892
+    second: americaWoman_2
+  - first:
+      213: 2404534944249857316
+    second: americaWoman_3
+  - first:
+      213: 5764486841746601326
+    second: americaWoman_4
+  - first:
+      213: -3011437362648452277
+    second: americaWoman_5
+  - first:
+      213: 1961004566032840644
+    second: americaWoman_6
+  - first:
+      213: 5138315538519544960
+    second: americaWoman_7
+  - first:
+      213: -4321124289668222650
+    second: americaWoman_8
+  - first:
+      213: 2573600661794391848
+    second: americaWoman_9
+  - first:
+      213: 7542296172663804355
+    second: americaWoman_10
+  - first:
+      213: -6135871088405556433
+    second: americaWoman_11
+  - first:
+      213: 5348646750267996345
+    second: americaWoman_12
+  - first:
+      213: 6715789876460442684
+    second: americaWoman_13
+  - first:
+      213: -4945931653433949294
+    second: americaWoman_14
+  - first:
+      213: 3215907603382226348
+    second: americaWoman_15
+  - first:
+      213: 8148725339466773049
+    second: americaWoman_16
+  - first:
+      213: 5342868568164989967
+    second: americaWoman_17
+  - first:
+      213: -6405309223424570687
+    second: americaWoman_18
+  - first:
+      213: -3262722951529786994
+    second: americaWoman_19
+  - first:
+      213: -7098209670561443168
+    second: americaWoman_20
+  - first:
+      213: -2495425665822186559
+    second: americaWoman_21
+  - first:
+      213: -7557573491004052028
+    second: americaWoman_22
+  - first:
+      213: 1494477496267240359
+    second: americaWoman_23
+  - first:
+      213: -6945981173092820933
+    second: americaWoman_24
+  - first:
+      213: 3843310310828221982
+    second: americaWoman_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: americaWoman_0
+      rect:
+        serializedVersion: 2
+        x: 1229
+        y: 4489
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2446ad8dba6926f10800000000000000
+      internalID: 2261535627715175490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: americaWoman_1
+      rect:
+        serializedVersion: 2
+        x: 1399
+        y: 4479
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1017d6e04f2131d30800000000000000
+      internalID: 4400882100294480129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: americaWoman_2
+      rect:
+        serializedVersion: 2
+        x: 1849
+        y: 69
+        width: 1442
+        height: 4782
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf3aa2eae2994a120800000000000000
+      internalID: 2424230925201744892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: americaWoman_3
+      rect:
+        serializedVersion: 2
+        x: 3339
+        y: 4469
+        width: 152
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 425c602cacf9e5120800000000000000
+      internalID: 2404534944249857316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: americaWoman_4
+      rect:
+        serializedVersion: 2
+        x: 3559
+        y: 4449
+        width: 142
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6538b2bd329fff40800000000000000
+      internalID: 5764486841746601326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: americaWoman_5
+      rect:
+        serializedVersion: 2
+        x: 6369
+        y: 69
+        width: 1922
+        height: 4782
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b43fff78ca93536d0800000000000000
+      internalID: -3011437362648452277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: americaWoman_6
+      rect:
+        serializedVersion: 2
+        x: 11139
+        y: 69
+        width: 2152
+        height: 4782
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c77e415343e63b10800000000000000
+      internalID: 1961004566032840644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: americaWoman_7
+      rect:
+        serializedVersion: 2
+        x: 16139
+        y: 69
+        width: 2152
+        height: 4782
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 084d35122c6fe4740800000000000000
+      internalID: 5138315538519544960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: americaWoman_8
+      rect:
+        serializedVersion: 2
+        x: 21199
+        y: 69
+        width: 2092
+        height: 4782
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64173045a584804c0800000000000000
+      internalID: -4321124289668222650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: americaWoman_9
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 4359
+        width: 122
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82707f79a2447b320800000000000000
+      internalID: 2573600661794391848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: americaWoman_10
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 4269
+        width: 122
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c11a62886e9ba860800000000000000
+      internalID: 7542296172663804355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: americaWoman_11
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 4359
+        width: 102
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f235ffb11c109daa0800000000000000
+      internalID: -6135871088405556433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: americaWoman_12
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 4269
+        width: 132
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b875ca81e53a3a40800000000000000
+      internalID: 5348646750267996345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: americaWoman_13
+      rect:
+        serializedVersion: 2
+        x: 1269
+        y: 4209
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c34d6949f47433d50800000000000000
+      internalID: 6715789876460442684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: americaWoman_14
+      rect:
+        serializedVersion: 2
+        x: 3449
+        y: 3189
+        width: 992
+        height: 1132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29385b9ad558c5bb0800000000000000
+      internalID: -4945931653433949294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: americaWoman_15
+      rect:
+        serializedVersion: 2
+        x: 4379
+        y: 4159
+        width: 142
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cad431a3de231ac20800000000000000
+      internalID: 3215907603382226348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: americaWoman_16
+      rect:
+        serializedVersion: 2
+        x: 3369
+        y: 3379
+        width: 132
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 932342fb586161170800000000000000
+      internalID: 8148725339466773049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: americaWoman_17
+      rect:
+        serializedVersion: 2
+        x: 3979
+        y: 2999
+        width: 72
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0cf21fa7aea52a40800000000000000
+      internalID: 5342868568164989967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: americaWoman_18
+      rect:
+        serializedVersion: 2
+        x: 4139
+        y: 2999
+        width: 72
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cace35b235cb17a0800000000000000
+      internalID: -6405309223424570687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: americaWoman_19
+      rect:
+        serializedVersion: 2
+        x: 3999
+        y: 2979
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e819d8123ca78b2d0800000000000000
+      internalID: -3262722951529786994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: americaWoman_20
+      rect:
+        serializedVersion: 2
+        x: 4139
+        y: 2949
+        width: 62
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a251fc99e71e7d90800000000000000
+      internalID: -7098209670561443168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: americaWoman_21
+      rect:
+        serializedVersion: 2
+        x: 3999
+        y: 2889
+        width: 52
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c3a64904977e5dd0800000000000000
+      internalID: -2495425665822186559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: americaWoman_22
+      rect:
+        serializedVersion: 2
+        x: 3449
+        y: 2649
+        width: 142
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cd6bc0a3fa1e1790800000000000000
+      internalID: -7557573491004052028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: americaWoman_23
+      rect:
+        serializedVersion: 2
+        x: 3689
+        y: 2629
+        width: 162
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a3f2d16d537db410800000000000000
+      internalID: 1494477496267240359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: americaWoman_24
+      rect:
+        serializedVersion: 2
+        x: 4169
+        y: 2609
+        width: 142
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b385049aceaea9f90800000000000000
+      internalID: -6945981173092820933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: americaWoman_25
+      rect:
+        serializedVersion: 2
+        x: 4409
+        y: 2589
+        width: 162
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e16238e6d5e265530800000000000000
+      internalID: 3843310310828221982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      americaWoman_0: 2261535627715175490
+      americaWoman_1: 4400882100294480129
+      americaWoman_10: 7542296172663804355
+      americaWoman_11: -6135871088405556433
+      americaWoman_12: 5348646750267996345
+      americaWoman_13: 6715789876460442684
+      americaWoman_14: -4945931653433949294
+      americaWoman_15: 3215907603382226348
+      americaWoman_16: 8148725339466773049
+      americaWoman_17: 5342868568164989967
+      americaWoman_18: -6405309223424570687
+      americaWoman_19: -3262722951529786994
+      americaWoman_2: 2424230925201744892
+      americaWoman_20: -7098209670561443168
+      americaWoman_21: -2495425665822186559
+      americaWoman_22: -7557573491004052028
+      americaWoman_23: 1494477496267240359
+      americaWoman_24: -6945981173092820933
+      americaWoman_25: 3843310310828221982
+      americaWoman_3: 2404534944249857316
+      americaWoman_4: 5764486841746601326
+      americaWoman_5: -3011437362648452277
+      americaWoman_6: 1961004566032840644
+      americaWoman_7: 5138315538519544960
+      americaWoman_8: -4321124289668222650
+      americaWoman_9: 2573600661794391848
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

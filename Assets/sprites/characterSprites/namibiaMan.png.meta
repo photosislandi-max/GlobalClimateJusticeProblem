@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 67cc77a83b28a9441942f1aa74e0206d
+guid: 78372d0fa1a2e3240a2844776fee58c4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4856150383500409836
-    second: lefthandsprite6_0
+      213: -4662405338867617038
+    second: namibiaMan_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: lefthandsprite6_0
+      name: namibiaMan_0
       rect:
         serializedVersion: 2
-        x: 399
-        y: 0
-        width: 1692
-        height: 3021
+        x: 1739
+        y: 89
+        width: 1512
+        height: 4822
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ceb3b687b03846340800000000000000
-      internalID: 4856150383500409836
+      spriteID: 2f239e9fb0fcb4fb0800000000000000
+      internalID: -4662405338867617038
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      lefthandsprite6_0: 4856150383500409836
+      namibiaMan_0: -4662405338867617038
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

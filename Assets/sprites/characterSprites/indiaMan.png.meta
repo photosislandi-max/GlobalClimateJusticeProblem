@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f8adbd570f8833841bb73dd30e775665
+guid: 316dc2af341094845bafb6238afdb675
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5584863083569596650
-    second: lefthandsprite4_0
+      213: -5217629265340742322
+    second: indiaMan_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: lefthandsprite4_0
+      name: indiaMan_0
       rect:
         serializedVersion: 2
-        x: 399
-        y: 0
-        width: 1692
-        height: 3021
+        x: 173
+        y: 8
+        width: 153
+        height: 484
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 61734a88d949e72b0800000000000000
-      internalID: -5584863083569596650
+      spriteID: e45ceadc3d14797b0800000000000000
+      internalID: -5217629265340742322
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      lefthandsprite4_0: -5584863083569596650
+      indiaMan_0: -5217629265340742322
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
