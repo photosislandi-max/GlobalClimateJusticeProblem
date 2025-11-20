@@ -31,3 +31,4 @@ public class buttonActivator : MonoBehaviour
         Debug.Log("Economy increased by 3. New value: " + staticBarIntergers.EconomyBar);
     }
 }
+

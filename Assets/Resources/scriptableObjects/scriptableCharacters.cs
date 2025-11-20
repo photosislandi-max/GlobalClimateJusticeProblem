@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Video;
 
 [CreateAssetMenu(fileName = "newCharacter", menuName = "createCharacter")]
 public class scriptableCharacters : ScriptableObject
@@ -15,4 +16,6 @@ public class scriptableCharacters : ScriptableObject
     public int noClimateBarInt;
     public int noJusticeBarInt;
     public int noEconomyBarInt;
+
+    public VideoClip videoNoButton;
 }
