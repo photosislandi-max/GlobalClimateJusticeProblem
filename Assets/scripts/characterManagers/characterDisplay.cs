@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Video;
 
 public class characterDisplay : MonoBehaviour
 
@@ -27,11 +28,13 @@ public class characterDisplay : MonoBehaviour
     public TMP_Text noglobalJusticeEffect;
     public TMP_Text noeconomyEffect;
 
+    public VideoClip characterVideo;
+
+    public RenderTexture videoTexture;
+
     void Start()
     {
         characterData = Manager.currentCharacter;
-
-        
     }
     
     void Update()
@@ -43,6 +46,7 @@ public class characterDisplay : MonoBehaviour
         characterArtwork.sprite = data.characterArtwork;
         speechBubbleArtwork.sprite = data.speechBubbleArtwork;
 
+
         yesclimateEffect.text = data.yesClimateBarInt.ToString();
         yesglobalJusticeEffect.text = data.yesJusticeBarInt.ToString();
         yeseconomyEffect.text = data.yesEconomyBarInt.ToString();
@@ -50,6 +54,9 @@ public class characterDisplay : MonoBehaviour
         noclimateEffect.text = data.noClimateBarInt.ToString();
         noglobalJusticeEffect.text = data.noJusticeBarInt.ToString();
         noeconomyEffect.text = data.noEconomyBarInt.ToString();
+
+        // characterData = Manager.currentCharacter;
+
         // issueDescription.text = characterData.issuedescription;
 
         // characterArtwork.sprite = characterData.characterArtwork;

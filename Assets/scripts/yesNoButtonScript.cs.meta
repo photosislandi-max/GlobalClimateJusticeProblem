@@ -1,15 +1,2 @@
 fileFormatVersion: 2
 guid: d2bbbf7f084dfa74f8deb7b6d1669d33
-MonoImporter:
-  externalObjects: {}
-  serializedVersion: 2
-  defaultReferences:
-  - characterData: {fileID: 11400000, guid: d225d402bbe2cbf419498fea58a17169, type: 2}
-  - redButton: {instanceID: 0}
-  - greenButton: {instanceID: 0}
-  - animator: {instanceID: 0}
-  executionOrder: 0
-  icon: {instanceID: 0}
-  userData: 
-  assetBundleName: 
-  assetBundleVariant: 

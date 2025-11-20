@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class ButtonChecker : MonoBehaviour
 {
-    
-    public characterManager Manager;
+    // public characterManager ManagerInput; 
+    public characterManager characterManager;
     public scriptableCharacters characterData;
     public scriptableCharacters GetCharacterData()
     {
@@ -18,44 +18,52 @@ public class ButtonChecker : MonoBehaviour
 
     void Awake()
     {
-    }
-
-    /* Initializes the character data on start */
-    void Start()
-    {
-        if (Manager == null)
+        if (characterManager == null)
         {
-            Manager = Object.FindFirstObjectByType<characterManager>();
+            characterManager = Object.FindFirstObjectByType<characterManager>();
         }
-        characterData = Manager.currentCharacter;
-    }
 
-    /* Updates the character data based on the current character index in the manager */
-    void updateCharacterData()
-    {
-        Manager.currentCharacter = Manager.characters[Manager.currentCharacterIndex];
-        characterData = Manager.currentCharacter;
+        if (characterManager != null)
+        {
+            // Ensure currentCharacter is set to the character at currentCharacterIndex if it's null
+            if (characterManager.currentCharacter == null && characterManager.characters != null && characterManager.characters.Length > 0)
+            {
+                characterManager.currentCharacterIndex = Mathf.Clamp(characterManager.currentCharacterIndex, 0, characterManager.characters.Length - 1);
+                characterManager.currentCharacter = characterManager.characters[characterManager.currentCharacterIndex];
+            }
+            characterData = characterManager.currentCharacter;
+        }
     }
+    
     public void OnRedButtonPressed()
     {
         animator.SetTrigger("redpress");
 
+        // Use the currently shown character's values first   
+
+        characterData = characterManager.currentCharacter;
+        
+        UnityEngine.Debug.Log("Red Button Pressed. Current Character: " + characterManager.currentCharacterIndex);
         staticBarIntergers.climateBar += characterData.noClimateBarInt;
         staticBarIntergers.justiceBar += characterData.noJusticeBarInt;
         staticBarIntergers.EconomyBar += characterData.noEconomyBarInt;
-        Manager.currentCharacterIndex++;                                                                          // Increment the character index to move to the next character
-        updateCharacterData();                                                                                    // Update character data after incrementing the index
+
+        characterManager.AdvanceToNextCharacter();
+        characterManager.currentCharacter = characterManager.characters[characterManager.currentCharacterIndex];
+
     }
 
     public void OnGreenButtonPressed()
     {
         animator.SetTrigger("greenpress");
 
+        characterData = characterManager.currentCharacter;
+        
         staticBarIntergers.climateBar += characterData.yesClimateBarInt;
         staticBarIntergers.justiceBar += characterData.yesJusticeBarInt;
         staticBarIntergers.EconomyBar += characterData.yesEconomyBarInt;
-        Manager.currentCharacterIndex++;                                                                          // Increment the character index to move to the next character
-        updateCharacterData();                                                                                    // Update character data after incrementing the index
         
+        characterManager.AdvanceToNextCharacter();
+        characterManager.currentCharacter = characterManager.characters[characterManager.currentCharacterIndex];
     }
 }
