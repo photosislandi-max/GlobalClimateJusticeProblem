@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a839a1938e1dc744825ac3c1f2c426f, type: 3}
+  m_Name: 10singaporreChar
+  m_EditorClassIdentifier: 
+  charactername: SingaporeMan
+  issuedescription: NO ISSSUE DEVELOPED COUNTRY
+  characterArtwork: {fileID: -1984719484841452147, guid: f01cdd67d7d2d3d4f894e2fcde0ee125, type: 3}
+  speechBubbleArtwork: {fileID: -7483706513750965665, guid: 4fc190a44ee6e2c4a852fdd5416be4fc, type: 3}
+  yesClimateBarInt: 5
+  yesJusticeBarInt: 5
+  yesEconomyBarInt: 5
+  noClimateBarInt: 5
+  noJusticeBarInt: 5
+  noEconomyBarInt: 5
+  videoNoButton: {fileID: 32900000, guid: 8c5d386948cc8bc4ca3581f292d36b12, type: 3}
