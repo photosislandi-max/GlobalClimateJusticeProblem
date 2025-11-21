@@ -9,17 +9,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a839a1938e1dc744825ac3c1f2c426f, type: 3}
-  m_Name: frenchDr.Croissaint
+  m_Script: {fileID: 11500000, guid: 7cb4d507c3c3342458483c229b1e2ab2, type: 3}
+  m_Name: baseCharacter
   m_EditorClassIdentifier: 
-  charactername: Dr.Croissant R&D
-  issuedescription: OI OI INVEST IN RND THORUGH ME. MAYBE GOOD MAYBE SHIT
+  charactername: R&Dchar
+  issuedescription: I've come with great news! I've found great climate research
+    through the means you've spent. We can implement it into other countries and
+    help them.
   characterArtwork: {fileID: 4991248251315979534, guid: 236b2aab1a4ad1f40a782b5619ecba2f, type: 3}
   speechBubbleArtwork: {fileID: -7483706513750965665, guid: 4fc190a44ee6e2c4a852fdd5416be4fc, type: 3}
-  yesClimateBarInt: 0
-  yesJusticeBarInt: 0
-  yesEconomyBarInt: 0
-  noClimateBarInt: 0
-  noJusticeBarInt: 0
-  noEconomyBarInt: 0
-  videoNoButton: {fileID: 0}
+  yesClimateBarInt: 5
+  yesJusticeBarInt: 5
+  yesEconomyBarInt: 2
+  videoNoButton: {fileID: 32900000, guid: 8c5d386948cc8bc4ca3581f292d36b12, type: 3}
+  chanceToAppear: 30
