@@ -8,8 +8,11 @@ public class characterManager : MonoBehaviour
     public GameObject NewsPanel;
     public scriptableCharacters[] characters; //Array to hold our characters
     public int currentCharacterIndex = 0; //Index to track the current character
-    public baseCharacter currentCharacter; //Reference to the current character (can be baseCharacter or scriptableCharacters)
+    public baseCharacter currentCharacter; //Reference to the current character 
     public baseCharacter baseCharacterSO; // Reference to baseCharacter ScriptableObject
+    // If true, we previously showed baseCharacter as an inserted extra and must now show
+    // the array character for the same index without incrementing the index.
+    private bool baseInsertedPending = false;
     public void initCharacterArray()
     {
         Debug.Log("Initializing character array...");
@@ -26,14 +29,14 @@ public class characterManager : MonoBehaviour
             Debug.Log("No characters or baseCharacter found in Resources/scriptableObjects/characters");
             return;
         }
-        // Select the initial current character, applying the baseCharacter replacement chance per character
+        // Select the initial current character (start with first array entry if available)
         if (characters != null && characters.Length > 0)
         {
-            currentCharacter = ChooseCharacterForIndex(currentCharacterIndex);
+            currentCharacterIndex = Mathf.Clamp(currentCharacterIndex, 0, characters.Length - 1);
+            currentCharacter = characters[currentCharacterIndex];
         }
         else if (baseCharacterSO != null)
         {
-            // Fallback: no characters array but a baseCharacter exists
             currentCharacter = baseCharacterSO;
         }
     }
@@ -73,36 +76,52 @@ public class characterManager : MonoBehaviour
 
     public void AdvanceToNextCharacter()
 {
-    currentCharacterIndex++;
+        // If we previously inserted the baseCharacter as an extra, next call should show
+        // the array character for the same index (do not increment index).
+        if (baseInsertedPending)
+        {
+            baseInsertedPending = false;
+            if (characters != null && currentCharacterIndex >= 0 && currentCharacterIndex < characters.Length)
+                currentCharacter = characters[currentCharacterIndex];
+            else if (baseCharacterSO != null)
+                currentCharacter = baseCharacterSO;
+            Debug.Log("Showing array character after inserted base for index: " + currentCharacterIndex);
+            checkRoundOver();
+            return;
+        }
+
+        // Normal advance: move to next index and decide whether to insert baseCharacter as an extra
+        currentCharacterIndex++;
 
         if (characters != null && currentCharacterIndex < characters.Length)
-            currentCharacter = ChooseCharacterForIndex(currentCharacterIndex);
+        {
+            if (baseCharacterSO != null && baseCharacterSO.chanceToAppear > 0)
+            {
+                int roll = UnityEngine.Random.Range(0, 100);
+                if (roll < baseCharacterSO.chanceToAppear)
+                {
+                    // Insert baseCharacter as an extra popup before showing the array character
+                    currentCharacter = baseCharacterSO;
+                    baseInsertedPending = true;
+                    Debug.Log($"baseCharacter inserted as extra ({baseCharacterSO.chanceToAppear}%) at index {currentCharacterIndex} (roll={roll})");
+                    checkRoundOver();
+                    return;
+                }
+            }
 
-    Debug.Log("Advanced to character index: " + currentCharacterIndex);
-    checkRoundOver();
+            // No insertion: show the array character for the new index
+            currentCharacter = characters[currentCharacterIndex];
+        }
+        else
+        {
+            Debug.Log("Advanced past last character index: " + currentCharacterIndex);
+        }
+
+        Debug.Log("Advanced to character index: " + currentCharacterIndex);
+        checkRoundOver();
 }
 
-    // Choose a character for a given index, with a chance for the baseCharacter to replace it.
-    private baseCharacter ChooseCharacterForIndex(int index)
-    {
-        if (baseCharacterSO != null && baseCharacterSO.chanceToAppear > 0)
-        {
-            int roll = UnityEngine.Random.Range(0, 100); // 0-99
-            if (roll < baseCharacterSO.chanceToAppear)
-            {
-                Debug.Log($"baseCharacter chosen by chance ({baseCharacterSO.chanceToAppear}%) for index {index} (roll={roll})");
-                return baseCharacterSO;
-            }
-        }
-
-        // If replacement didn't happen or there's no baseCharacter, return the array character
-        if (characters != null && index >= 0 && index < characters.Length)
-        {
-            return characters[index];
-        }
-
-        return null;
-    }
+    // (Removed ChooseCharacterForIndex - insertion is handled by AdvanceToNextCharacter)
 
     
     }

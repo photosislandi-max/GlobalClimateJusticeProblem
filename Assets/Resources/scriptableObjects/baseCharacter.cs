@@ -10,6 +10,8 @@ public class baseCharacter : ScriptableObject
     public Sprite characterArtwork;
     public Sprite speechBubbleArtwork;
 
+    public Sprite iconBubbleArtwork;
+
     public int yesClimateBarInt;
     public int yesJusticeBarInt;
     public int yesEconomyBarInt;
