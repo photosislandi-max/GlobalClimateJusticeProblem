@@ -7,6 +7,8 @@ public class SceneChanger : MonoBehaviour
 
     public GameObject newsRoom;
 
+    public GameObject endScreen;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -19,11 +21,14 @@ public class SceneChanger : MonoBehaviour
         
     }
     
-    public void changeThat(string nameOfPanel)
+    public void changeScene(GameObject nameOfPanel)
     {
         Introduction.SetActive(false);
-         newsRoom.SetActive(false);
-         mainScene.SetActive(true);
+        newsRoom.SetActive(false);
+        mainScene.SetActive(false);
+        endScreen.SetActive(false);
+
+        nameOfPanel.SetActive(true);
        
     }
 }
