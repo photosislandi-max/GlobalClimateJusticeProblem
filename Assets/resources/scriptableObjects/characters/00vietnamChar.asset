@@ -17,10 +17,10 @@ MonoBehaviour:
     We don''t have the economy to build flood protection on our own. '
   characterArtwork: {fileID: -4106889282318333101, guid: 58d6c96727729ee46866782b5f879e52, type: 3}
   speechBubbleArtwork: {fileID: -7483706513750965665, guid: 4fc190a44ee6e2c4a852fdd5416be4fc, type: 3}
-  yesClimateBarInt: 0
+  yesClimateBarInt: 33
   yesJusticeBarInt: 10
   yesEconomyBarInt: -2
-  noClimateBarInt: -100
+  noClimateBarInt: -70
   noJusticeBarInt: 0
   noEconomyBarInt: 0
   videoNoButton: {fileID: 32900000, guid: df3b427f6bc042947878c2c24fcb964d, type: 3}

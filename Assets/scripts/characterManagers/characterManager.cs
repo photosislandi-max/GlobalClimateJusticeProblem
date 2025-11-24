@@ -44,15 +44,15 @@ public class characterManager : MonoBehaviour
 
             if (currentCharacterIndex == 6)
             {
-                // OfficePanel.SetActive(false);
-                // NewsPanel.SetActive(true);
-                sceneChanger.changeScene(NewsPanel);
+                OfficePanel.SetActive(false);
+                NewsPanel.SetActive(true);
+                // sceneChanger.changeScene(NewsPanel);
             }
             else if (currentCharacterIndex == 9)
             {
-                // OfficePanel.SetActive(false);
-                // NewsPanel.SetActive(true);
-                sceneChanger.changeScene(NewsPanel);
+                OfficePanel.SetActive(false);
+                NewsPanel.SetActive(true);
+                // sceneChanger.changeScene(NewsPanel);
             }
     
         Debug.Log("Checking if round is over at character index: " + currentCharacterIndex);
