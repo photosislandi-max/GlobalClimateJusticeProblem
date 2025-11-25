@@ -1,6 +1,8 @@
 using System;
 using UnityEngine;
 
+
+
 //This script has our array and will manage our characters in the game
 public class characterManager : MonoBehaviour
 {
@@ -13,6 +15,7 @@ public class characterManager : MonoBehaviour
     // If true, we previously showed baseCharacter as an inserted extra and must now show
     // the array character for the same index without incrementing the index.
     private bool baseInsertedPending = false;
+    public bool rndExists = false;
     public void initCharacterArray()
     {
         Debug.Log("Initializing character array...");
@@ -53,19 +56,20 @@ public class characterManager : MonoBehaviour
     }
     public void checkRoundOver()
     {
-            if (currentCharacterIndex == 3)
+        Debug.Log("checking value of rndExist bool"+ rndExists);
+            if (currentCharacterIndex == 3 && rndExists == false)
             {
                 OfficePanel.SetActive(false);
                 NewsPanel.SetActive(true);
             }
         Debug.Log("Checking if round is over at character index: " + currentCharacterIndex);
 
-            if (currentCharacterIndex == 6)
+            if (currentCharacterIndex == 6 && rndExists == false)
             {
                 OfficePanel.SetActive(false);
                 NewsPanel.SetActive(true);
             }
-            else if (currentCharacterIndex == 9)
+            else if (currentCharacterIndex == 9 && rndExists == false)
             {
                 OfficePanel.SetActive(false);
                 NewsPanel.SetActive(true);
@@ -78,6 +82,8 @@ public class characterManager : MonoBehaviour
 {
         // If we previously inserted the baseCharacter as an extra, next call should show
         // the array character for the same index (do not increment index).
+  
+
         if (baseInsertedPending)
         {
             baseInsertedPending = false;
@@ -91,6 +97,8 @@ public class characterManager : MonoBehaviour
         }
 
         // Normal advance: move to next index and decide whether to insert baseCharacter as an extra
+       
+       
         currentCharacterIndex++;
 
         if (characters != null && currentCharacterIndex < characters.Length)
@@ -101,10 +109,15 @@ public class characterManager : MonoBehaviour
                 if (roll < baseCharacterSO.chanceToAppear)
                 {
                     // Insert baseCharacter as an extra popup before showing the array character
+                    rndExists = true;
                     currentCharacter = baseCharacterSO;
                     baseInsertedPending = true;
                     Debug.Log($"baseCharacter inserted as extra ({baseCharacterSO.chanceToAppear}%) at index {currentCharacterIndex} (roll={roll})");
                     checkRoundOver();
+                    if (rndExists == true)
+                    {
+                        rndExists = false;
+                    }
                     return;
                 }
             }

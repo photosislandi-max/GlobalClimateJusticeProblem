@@ -19,5 +19,5 @@ public class baseCharacter : ScriptableObject
 
     public VideoClip videoNoButton;
     [Range(0,100)]
-    public int chanceToAppear = 0; // Percentage chance to appear
+    public int chanceToAppear = 0; 
 }

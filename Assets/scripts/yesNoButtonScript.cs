@@ -3,6 +3,7 @@ using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class ButtonChecker : MonoBehaviour
 {
     // public characterManager ManagerInput; 
@@ -62,6 +63,10 @@ public class ButtonChecker : MonoBehaviour
 
     public void OnGreenButtonPressed()
     {
+        //  if (CharacterManager.rndExists == true)
+        // {
+        //     rndExists = false;
+        // }
         animator.SetTrigger("greenpress");
 
         // Use baseCharacter fields for Yes-button handling (these exist on baseCharacter)
