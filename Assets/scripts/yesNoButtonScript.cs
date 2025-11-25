@@ -3,6 +3,7 @@ using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class ButtonChecker : MonoBehaviour
 {
     // public characterManager ManagerInput; 
@@ -31,7 +32,7 @@ public class ButtonChecker : MonoBehaviour
                 characterManager.currentCharacterIndex = Mathf.Clamp(characterManager.currentCharacterIndex, 0, characterManager.characters.Length - 1);
                 characterManager.currentCharacter = characterManager.characters[characterManager.currentCharacterIndex];
             }
-            characterData = characterManager.currentCharacter;
+            characterData = characterManager.currentCharacter as scriptableCharacters;
         }
     }
     
@@ -41,29 +42,46 @@ public class ButtonChecker : MonoBehaviour
 
         // Use the currently shown character's values first   
 
-        characterData = characterManager.currentCharacter;
-        
-        UnityEngine.Debug.Log("Red Button Pressed. Current Character: " + characterManager.currentCharacterIndex);
-        staticBarIntergers.climateBar += characterData.noClimateBarInt;
-        staticBarIntergers.justiceBar += characterData.noJusticeBarInt;
-        staticBarIntergers.EconomyBar += characterData.noEconomyBarInt;
+        // Safely cast currentCharacter to scriptableCharacters. If it's not the subclass,
+        // warn and skip applying the No-button effects.
+        scriptableCharacters scNo = characterManager.currentCharacter as scriptableCharacters;
+        if (scNo == null)
+        {
+            UnityEngine.Debug.LogWarning("Current character is not a full scriptableCharacters for No-button handling.");
+        }
+        else
+        {
+            UnityEngine.Debug.Log("Red Button Pressed. Current Character: " + characterManager.currentCharacterIndex);
+            staticBarIntergers.climateBar += scNo.noClimateBarInt;
+            staticBarIntergers.justiceBar += scNo.noJusticeBarInt;
+            staticBarIntergers.EconomyBar += scNo.noEconomyBarInt;
+        }
 
         characterManager.AdvanceToNextCharacter();
-        characterManager.currentCharacter = characterManager.characters[characterManager.currentCharacterIndex];
 
     }
 
     public void OnGreenButtonPressed()
     {
+        //  if (CharacterManager.rndExists == true)
+        // {
+        //     rndExists = false;
+        // }
         animator.SetTrigger("greenpress");
 
-        characterData = characterManager.currentCharacter;
-        
-        staticBarIntergers.climateBar += characterData.yesClimateBarInt;
-        staticBarIntergers.justiceBar += characterData.yesJusticeBarInt;
-        staticBarIntergers.EconomyBar += characterData.yesEconomyBarInt;
-        
+        // Use baseCharacter fields for Yes-button handling (these exist on baseCharacter)
+        baseCharacter baseChar = characterManager.currentCharacter;
+        if (baseChar == null)
+        {
+            UnityEngine.Debug.LogWarning("No current character for Yes-button handling.");
+        }
+        else
+        {
+            staticBarIntergers.climateBar += baseChar.yesClimateBarInt;
+            staticBarIntergers.justiceBar += baseChar.yesJusticeBarInt;
+            staticBarIntergers.EconomyBar += baseChar.yesEconomyBarInt;
+        }
+
         characterManager.AdvanceToNextCharacter();
-        characterManager.currentCharacter = characterManager.characters[characterManager.currentCharacterIndex];
     }
 }
