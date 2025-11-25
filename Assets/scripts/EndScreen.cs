@@ -1,6 +1,7 @@
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using System.Text.RegularExpressions;
 
 public class EndScreenManager : MonoBehaviour
 {
@@ -68,6 +69,7 @@ public class EndScreenManager : MonoBehaviour
             endingTitleText.text = "Economical Boom";
             endingDescriptionText.text = "You focused on the economy.";
         }
+        
     }
 
     public void RestartGame()

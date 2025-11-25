@@ -23,6 +23,9 @@ public class characterDisplay : DialougeBaseClass
     public TMP_Text yesclimateEffect;
     public TMP_Text yesglobalJusticeEffect;
     public TMP_Text yeseconomyEffect;
+    public TMP_Text noeconomyEffect;
+    public TMP_Text noclimateEffect;
+    public TMP_Text noglobalJusticeEffect;
 
     public VideoClip characterVideo;
 
