@@ -2,23 +2,24 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.Video;
+using DialougeSystem;
 
-public class characterDisplay : MonoBehaviour
+public class characterDisplay : DialougeBaseClass
 
 {
     public characterManager Manager;
     public scriptableCharacters characterData;
     public scriptableCharacters GetCharacterData()
-{
-    return characterData;
-}
+    {
+        return characterData;
+    }
 
     public TMP_Text issueDescription;
 
     public Image characterArtwork;
     public Image speechBubbleArtwork;
 
-//Yes button effect
+    //Yes button effect
     public TMP_Text yesclimateEffect;
     public TMP_Text yesglobalJusticeEffect;
     public TMP_Text yeseconomyEffect;
@@ -32,13 +33,45 @@ public class characterDisplay : MonoBehaviour
 
     public RenderTexture videoTexture;
 
+    [SerializeField] private TMP_FontAsset tmp_Font;
+
+    private int lastCharacterIndex = -1;
+
     void Start()
     {
+        lastCharacterIndex = Manager.currentCharacterIndex;
+        if (tmp_Font == null && issueDescription != null)
+        {
+            tmp_Font = issueDescription.font;
+        }
+        StartCoroutine(WriteText(characterData.issuedescription, issueDescription, tmp_Font));
         characterData = Manager.currentCharacter as scriptableCharacters;
     }
-    
+
     void Update()
     {
+        var data = Manager.currentCharacter;
+
+        // Hvis karakteren har ændret sig, start typewriter effekten igen
+        if (Manager.currentCharacterIndex != lastCharacterIndex)
+        {
+            lastCharacterIndex = Manager.currentCharacterIndex;
+            StopAllCoroutines();
+            StartCoroutine(WriteText(data.issuedescription, issueDescription, tmp_Font));
+        }
+
+        characterArtwork.sprite = data.characterArtwork;
+        speechBubbleArtwork.sprite = data.speechBubbleArtwork;
+
+
+        yesclimateEffect.text = data.yesClimateBarInt.ToString();
+        yesglobalJusticeEffect.text = data.yesJusticeBarInt.ToString();
+        yeseconomyEffect.text = data.yesEconomyBarInt.ToString();
+
+        noclimateEffect.text = data.noClimateBarInt.ToString();
+        noglobalJusticeEffect.text = data.noJusticeBarInt.ToString();
+        noeconomyEffect.text = data.noEconomyBarInt.ToString();
+        //----------------------------
         // Always display base fields (these exist on baseCharacter)
         baseCharacter baseChar = Manager.currentCharacter;
         if (baseChar == null)
@@ -79,7 +112,7 @@ public class characterDisplay : MonoBehaviour
 
         // yesglobalJusticeEffect.text = characterData.yesJusticeBarInt.ToString();
 
-        // yeseconomyEffect.text = characterData.yesEconomyBarInt.ToString();
+        // yeseconomyEffect.text = characterData.yeseconomyEffect.ToString();
 
 
         // noclimateEffect.text = characterData.noClimateBarInt.ToString();

@@ -4,8 +4,9 @@ public class SceneChanger : MonoBehaviour
 {
     public GameObject Introduction;
     public GameObject mainScene;
-
+    public GameObject endScene;
     public GameObject newsRoom;
+    public int currentCharacterIndex; 
 
     public GameObject endScreen;
 
@@ -16,11 +17,25 @@ public class SceneChanger : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void Update() 
     {
-        
-    }
     
+    }
+  public void checkGameOver(string nameOfPanel)
+  {
+        Introduction.SetActive(false);
+         newsRoom.SetActive(false);
+         mainScene.SetActive(false);
+         endScene.SetActive(true);
+
+  }
+    public void changeThat(string nameOfPanel)
+    {
+        Introduction.SetActive(false);
+         newsRoom.SetActive(false);
+         mainScene.SetActive(true);
+         endScene.SetActive(false);
+
     public void changeScene(GameObject nameOfPanel)
     {
         Introduction.SetActive(false);
@@ -31,4 +46,4 @@ public class SceneChanger : MonoBehaviour
         nameOfPanel.SetActive(true);
        
     }
-}
+}   
