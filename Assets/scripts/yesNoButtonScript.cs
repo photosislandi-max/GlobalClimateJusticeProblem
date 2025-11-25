@@ -15,6 +15,8 @@ public class ButtonChecker : MonoBehaviour
     }
     public Button redButton;
     public Button greenButton;
+
+    public Button trumpButton;
     public Animator animator;
 
     void Awake()
@@ -84,4 +86,10 @@ public class ButtonChecker : MonoBehaviour
 
         characterManager.AdvanceToNextCharacter();
     }
+    public void OnTrumpButtonPressed()
+    {
+        animator.SetTrigger("trumppress");
+    }
 }
+
+    

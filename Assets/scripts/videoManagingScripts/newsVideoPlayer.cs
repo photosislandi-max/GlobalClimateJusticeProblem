@@ -10,6 +10,8 @@ public class NewsVideoPlayer : MonoBehaviour
 
     public GameObject nextRoundButton;
 
+    public VideoClip defaultClip;
+
     private void OnEnable()
     {
         // Avoid starting multiple coroutines if panel is toggled quickly
@@ -25,9 +27,12 @@ public class NewsVideoPlayer : MonoBehaviour
 
         if (queue == null || queue.Count == 0)
         {
-            Debug.Log("No videos queued.");
-            isPlayingQueue = false;
-            yield break;
+            videoPlayer.clip = defaultClip;
+            videoPlayer.Play();
+
+        // wait for default video to finish
+        while (videoPlayer.isPlaying)
+            yield return null;
         }
 
         foreach (var clip in queue)

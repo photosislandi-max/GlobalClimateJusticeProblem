@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/mp3.meta
+guid: fd30119a21a831e409083da44f9c3532
+========
 guid: dd306a6305c92be4eb142cb02930ca11
+>>>>>>>> main1:Assets/scripts/endScene.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
