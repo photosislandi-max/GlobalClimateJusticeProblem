@@ -6,8 +6,10 @@ using UnityEngine;
 //This script has our array and will manage our characters in the game
 public class characterManager : MonoBehaviour
 {
+    public SceneChanger sceneChanger;
     public GameObject OfficePanel;
     public GameObject NewsPanel;
+    private GameObject endScreen;
     public scriptableCharacters[] characters; //Array to hold our characters
     public int currentCharacterIndex = 0; //Index to track the current character
     public baseCharacter currentCharacter; //Reference to the current character 
@@ -59,8 +61,7 @@ public class characterManager : MonoBehaviour
         Debug.Log("checking value of rndExist bool"+ rndExists);
             if (currentCharacterIndex == 3 && rndExists == false)
             {
-                OfficePanel.SetActive(false);
-                NewsPanel.SetActive(true);
+                sceneChanger.changeScene(NewsPanel);
             }
         Debug.Log("Checking if round is over at character index: " + currentCharacterIndex);
 
@@ -68,11 +69,13 @@ public class characterManager : MonoBehaviour
             {
                 OfficePanel.SetActive(false);
                 NewsPanel.SetActive(true);
+                // sceneChanger.changeScene(NewsPanel);
             }
             else if (currentCharacterIndex == 9 && rndExists == false)
             {
                 OfficePanel.SetActive(false);
                 NewsPanel.SetActive(true);
+                // sceneChanger.changeScene(NewsPanel);
             }
     
         Debug.Log("Checking if round is over at character index: " + currentCharacterIndex);
