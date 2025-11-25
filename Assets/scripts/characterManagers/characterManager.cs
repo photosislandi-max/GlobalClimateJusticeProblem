@@ -34,19 +34,19 @@ public class characterManager : MonoBehaviour
     }
     public void checkRoundOver()
     {
-            if (currentCharacterIndex == 3)
+            if (currentCharacterIndex == 6)
             {
                 OfficePanel.SetActive(false);
                 NewsPanel.SetActive(true);
             }
         Debug.Log("Checking if round is over at character index: " + currentCharacterIndex);
 
-            if (currentCharacterIndex == 6)
+            if (currentCharacterIndex == 9)
             {
                 OfficePanel.SetActive(false);
                 NewsPanel.SetActive(true);
             }
-            else if (currentCharacterIndex == 9)
+            else if (currentCharacterIndex == 12)
             {
                 OfficePanel.SetActive(false);
                 NewsPanel.SetActive(true);
