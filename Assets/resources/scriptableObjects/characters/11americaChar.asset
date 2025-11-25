@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a839a1938e1dc744825ac3c1f2c426f, type: 3}
   m_Name: 11americaChar
   m_EditorClassIdentifier: 
-  charactername: AmericaWoman
-  issuedescription: MAGA no issue yet
-  characterArtwork: {fileID: 2424230925201744892, guid: 762e167ba24a1ad458ba8cc9ed28edd7, type: 3}
+  charactername: AustraliaWoman
+  issuedescription: G'day CUNT
+  characterArtwork: {fileID: -1090771839756883065, guid: 728ffcda20fd4884bb6c7e8b26fd5eae, type: 3}
   speechBubbleArtwork: {fileID: -7483706513750965665, guid: 4fc190a44ee6e2c4a852fdd5416be4fc, type: 3}
   yesClimateBarInt: 5
   yesJusticeBarInt: 5
