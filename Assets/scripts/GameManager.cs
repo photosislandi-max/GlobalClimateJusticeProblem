@@ -50,6 +50,14 @@ public class GameManager : MonoBehaviour
         {
             staticBarIntergers.EconomyBar = 100;
         }
+        if (staticBarIntergers.justiceBar < 0)
+        {
+            staticBarIntergers.justiceBar = 0;
+        }
+        if (staticBarIntergers.EconomyBar < 0)
+        {
+            staticBarIntergers.EconomyBar = 0;
+        }
 
         isGameOverCheck();
         

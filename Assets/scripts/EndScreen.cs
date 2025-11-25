@@ -24,6 +24,7 @@ public class EndScreenManager : MonoBehaviour
     {
         // Gem scores lokalt s� det er lettere at arbejde med
         int c = staticBarIntergers.climateBar;
+        Debug.Log("Climate Score: " + c);
         int j = staticBarIntergers.justiceBar;
         int e = staticBarIntergers.EconomyBar;
 

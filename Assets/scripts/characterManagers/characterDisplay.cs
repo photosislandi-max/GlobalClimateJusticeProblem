@@ -39,13 +39,13 @@ public class characterDisplay : DialougeBaseClass
 
     void Start()
     {
+        characterData = Manager.currentCharacter as scriptableCharacters;
         lastCharacterIndex = Manager.currentCharacterIndex;
         if (tmp_Font == null && issueDescription != null)
         {
             tmp_Font = issueDescription.font;
         }
         StartCoroutine(WriteText(characterData.issuedescription, issueDescription, tmp_Font));
-        characterData = Manager.currentCharacter as scriptableCharacters;
     }
 
     void Update()
@@ -64,22 +64,22 @@ public class characterDisplay : DialougeBaseClass
         speechBubbleArtwork.sprite = data.speechBubbleArtwork;
 
 
-        yesclimateEffect.text = data.yesClimateBarInt.ToString();
-        yesglobalJusticeEffect.text = data.yesJusticeBarInt.ToString();
-        yeseconomyEffect.text = data.yesEconomyBarInt.ToString();
+        // yesclimateEffect.text = data.yesClimateBarInt.ToString();
+        // yesglobalJusticeEffect.text = data.yesJusticeBarInt.ToString();
+        // yeseconomyEffect.text = data.yesEconomyBarInt.ToString();
 
-        noclimateEffect.text = data.noClimateBarInt.ToString();
-        noglobalJusticeEffect.text = data.noJusticeBarInt.ToString();
-        noeconomyEffect.text = data.noEconomyBarInt.ToString();
+        // noclimateEffect.text = data.noClimateBarInt.ToString();
+        // noglobalJusticeEffect.text = data.noJusticeBarInt.ToString();
+        // noeconomyEffect.text = data.noEconomyBarInt.ToString();
         //----------------------------
         // Always display base fields (these exist on baseCharacter)
         baseCharacter baseChar = Manager.currentCharacter;
         if (baseChar == null)
             return;
 
-        issueDescription.text = baseChar.issuedescription;
-        characterArtwork.sprite = baseChar.characterArtwork;
-        speechBubbleArtwork.sprite = baseChar.speechBubbleArtwork;
+        // issueDescription.text = baseChar.issuedescription;
+        // characterArtwork.sprite = baseChar.characterArtwork;
+        // speechBubbleArtwork.sprite = baseChar.speechBubbleArtwork;
 
         yesclimateEffect.text = baseChar.yesClimateBarInt.ToString();
         yesglobalJusticeEffect.text = baseChar.yesJusticeBarInt.ToString();

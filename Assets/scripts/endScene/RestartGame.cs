@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class RestartGame : MonoBehaviour
 {
@@ -12,5 +13,12 @@ public class RestartGame : MonoBehaviour
     void Update()
     {
         
+    }
+    public void RestartTheGame()
+    {
+        staticBarIntergers.climateBar = 70;
+        staticBarIntergers.justiceBar = 0; 
+        staticBarIntergers.EconomyBar = 3;
+        SceneManager.LoadScene("MainScene");
     }
 }
