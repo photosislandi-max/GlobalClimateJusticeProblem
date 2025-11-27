@@ -632,7 +632,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   videoPlayer: {fileID: 77562007}
   nextRoundButton: {fileID: 1811780219}
-  defaultClip: {fileID: 0}
+  defaultClip: {fileID: 32900000, guid: 0c6e58d340d14e54fa956a6c78f43bc9, type: 3}
 --- !u!328 &77562007
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -3068,7 +3068,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -143, y: -225}
+  m_AnchoredPosition: {x: -143, y: -269.01}
   m_SizeDelta: {x: 120, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &826224957
@@ -4550,15 +4550,15 @@ RectTransform:
   m_GameObject: {fileID: 1064030914}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.8413, y: 1.8413, z: 1.8413}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1458547046}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 513.1572, y: 158.4884}
-  m_SizeDelta: {x: 656.3145, y: 525.2983}
+  m_AnchoredPosition: {x: 461.3511, y: 158.4884}
+  m_SizeDelta: {x: 541.6628, y: 525.2983}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1064030916
 MonoBehaviour:
@@ -7312,7 +7312,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5546458, g: 0.7735849, b: 0.6321442, a: 1}
+  m_Color: {r: 0.5546458, g: 0.7735849, b: 0.6321442, a: 0.52156866}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -7929,16 +7929,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1852625438}
-  m_LocalRotation: {x: -0, y: -0, z: -0.114937216, w: 0.9933728}
+  m_LocalRotation: {x: 0, y: 0, z: 0.11554396, w: 0.99330235}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1386231551}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -13.2}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 13.27}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 526.6677, y: -316.35416}
+  m_AnchoredPosition: {x: -320, y: -329}
   m_SizeDelta: {x: 127.4035, y: 121.8655}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1852625440
@@ -7958,7 +7958,7 @@ MonoBehaviour:
   redButton: {fileID: 0}
   greenButton: {fileID: 0}
   trumpButton: {fileID: 1852625441}
-  animator: {fileID: 0}
+  animator: {fileID: 1793536659}
 --- !u!114 &1852625441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8684,7 +8684,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 213, y: -225.5}
+  m_AnchoredPosition: {x: 213, y: -269.01}
   m_SizeDelta: {x: 120, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2016226977
