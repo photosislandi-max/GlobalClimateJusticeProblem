@@ -23,4 +23,4 @@ MonoBehaviour:
   yesJusticeBarInt: 5
   yesEconomyBarInt: 2
   videoNoButton: {fileID: 32900000, guid: 8c5d386948cc8bc4ca3581f292d36b12, type: 3}
-  chanceToAppear: 15
+  chanceToAppear: 0

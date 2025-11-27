@@ -58,20 +58,26 @@ public class characterManager : MonoBehaviour
     }
     public void checkRoundOver()
     {
+            if (currentCharacterIndex == 3)
+            {
+                baseCharacterSO.chanceToAppear = 15;
+                Debug.Log("Increased baseCharacter chanceToAppear to 15%");
+            }
+
         Debug.Log("checking value of rndExist bool"+ rndExists);
-            if (currentCharacterIndex == 3 && rndExists == false)
+            if (currentCharacterIndex == 6 && rndExists == false)
             {
                 sceneChanger.changeScene(NewsPanel);
             }
         Debug.Log("Checking if round is over at character index: " + currentCharacterIndex);
 
-            if (currentCharacterIndex == 6 && rndExists == false)
+            if (currentCharacterIndex == 9 && rndExists == false)
             {
                 OfficePanel.SetActive(false);
                 NewsPanel.SetActive(true);
                 // sceneChanger.changeScene(NewsPanel);
             }
-            else if (currentCharacterIndex == 9 && rndExists == false)
+            else if (currentCharacterIndex == 12 && rndExists == false)
             {
                 OfficePanel.SetActive(false);
                 NewsPanel.SetActive(true);
