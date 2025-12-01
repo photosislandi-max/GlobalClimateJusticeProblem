@@ -1,6 +1,8 @@
 using System.Collections.Generic;
 using System.Diagnostics;
+using UnityEditor.U2D.Animation;
 using UnityEngine;
+using UnityEngine.TextCore.Text;
 using UnityEngine.UI;
 
 
@@ -15,7 +17,7 @@ public class ButtonChecker : MonoBehaviour
     }
     public Button redButton;
     public Button greenButton;
-
+    
     public Button trumpButton;
     public Animator animator;
 
@@ -37,8 +39,32 @@ public class ButtonChecker : MonoBehaviour
             characterData = characterManager.currentCharacter as scriptableCharacters;
         }
     }
+
+
+     void Update()
+    {
+       if (characterManager == null || greenButton == null)
+             return;
+
+        // Try to get the current character as the subclass that contains No-button ints
+        scriptableCharacters sc = characterManager.currentCharacter as scriptableCharacters;
+        if (sc != null )
+        {
+            // If EconomyBar is lower than the character's No-economy requirement, disable the green button
+            if (staticBarIntergers.EconomyBar  + sc.yesEconomyBarInt < 0)
+                greenButton.interactable = false;
+            else
+                greenButton.interactable = true;
+        }
+        else
+        {
+            // If current character doesn't have No-values, keep the green button enabled
+            greenButton.interactable = true;
+        }
+    } 
+
     
-    public void OnRedButtonPressed()
+    public void OnredButtonPressed()
     {
         animator.SetTrigger("redpress");
 
@@ -63,7 +89,7 @@ public class ButtonChecker : MonoBehaviour
 
     }
 
-    public void OnGreenButtonPressed()
+    public void OngreenButtonPressed()
     {
         //  if (CharacterManager.rndExists == true)
         // {
@@ -90,6 +116,9 @@ public class ButtonChecker : MonoBehaviour
     {
         animator.SetTrigger("trumppress");
     }
+
+
+    
 }
 
     
