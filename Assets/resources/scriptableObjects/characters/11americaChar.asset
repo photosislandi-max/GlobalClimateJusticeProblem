@@ -16,10 +16,12 @@ MonoBehaviour:
   issuedescription: G'day CUNT
   characterArtwork: {fileID: -1090771839756883065, guid: 728ffcda20fd4884bb6c7e8b26fd5eae, type: 3}
   speechBubbleArtwork: {fileID: -7483706513750965665, guid: 4fc190a44ee6e2c4a852fdd5416be4fc, type: 3}
+  iconBubbleArtwork: {fileID: 0}
   yesClimateBarInt: 5
-  yesJusticeBarInt: 5
-  yesEconomyBarInt: 5
-  noClimateBarInt: 5
-  noJusticeBarInt: 5
-  noEconomyBarInt: 5
+  yesJusticeBarInt: 8
+  yesEconomyBarInt: -15
   videoNoButton: {fileID: 32900000, guid: 598d3b54722a7234eba67f46efdf516e, type: 3}
+  chanceToAppear: 0
+  noClimateBarInt: -8
+  noJusticeBarInt: 0
+  noEconomyBarInt: 0

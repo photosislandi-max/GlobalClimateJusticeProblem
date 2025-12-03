@@ -20,7 +20,7 @@ MonoBehaviour:
   iconBubbleArtwork: {fileID: 0}
   yesClimateBarInt: 10
   yesJusticeBarInt: 10
-  yesEconomyBarInt: -2
+  yesEconomyBarInt: -20
   videoNoButton: {fileID: 32900000, guid: 12d5ca83fe3f1ce449a93150d1746974, type: 3}
   chanceToAppear: 0
   noClimateBarInt: 0

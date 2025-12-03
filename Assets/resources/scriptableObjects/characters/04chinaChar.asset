@@ -17,10 +17,12 @@ MonoBehaviour:
     energy. Help them advance and create Windmills for their green transition. '
   characterArtwork: {fileID: -6237440004750429039, guid: c0bbcc9a6c8cdc24c97bd760c9681ea1, type: 3}
   speechBubbleArtwork: {fileID: -7483706513750965665, guid: 4fc190a44ee6e2c4a852fdd5416be4fc, type: 3}
+  iconBubbleArtwork: {fileID: 0}
   yesClimateBarInt: 9
   yesJusticeBarInt: 14
-  yesEconomyBarInt: -3
+  yesEconomyBarInt: -30
+  videoNoButton: {fileID: 32900000, guid: 304a383b900e11a49996ff6d067bb08a, type: 3}
+  chanceToAppear: 0
   noClimateBarInt: -4
   noJusticeBarInt: 0
   noEconomyBarInt: 0
-  videoNoButton: {fileID: 32900000, guid: 304a383b900e11a49996ff6d067bb08a, type: 3}
