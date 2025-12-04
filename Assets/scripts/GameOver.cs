@@ -15,7 +15,7 @@ public class GameOver : MonoBehaviour
     void Update()
     
     {
-        bool charactersDone = manager.currentCharacterIndex == 9;
+        bool charactersDone = manager.currentCharacterIndex == 12;
 
         bool noVideosLeft = videoDecisionManager.Instance.videosToPlay.Count == 0;
     
