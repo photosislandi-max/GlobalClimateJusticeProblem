@@ -21,18 +21,24 @@ public class characterManager : MonoBehaviour
     {
         Debug.Log("Initializing character array...");
         characters = Resources.LoadAll<scriptableCharacters>("scriptableObjects/characters");
- // Try to load the baseCharacter as a scriptableCharacters (so it has all fields), otherwise fallback
-            scriptableCharacters baseCharacterAsScriptableCharacters = Resources.Load<scriptableCharacters>("scriptableObjects/characters/baseCharacter");
-        if (baseCharacterAsScriptableCharacters != null)
-            baseCharacterRND = baseCharacterAsScriptableCharacters;
-        else
-            baseCharacterRND = Resources.Load<baseCharacter>("scriptableObjects/characters/baseCharacter");
 
-            if ((characters == null || characters.Length == 0) && baseCharacterRND == null)
+        // Try to load the baseCharacter as a scriptableCharacters (so it has all fields), otherwise fallback
+        scriptableCharacters baseCharacterAsScriptableCharacters = Resources.Load<scriptableCharacters>("scriptableObjects/characters/baseCharacter");
+        
+        if (baseCharacterAsScriptableCharacters != null)
         {
-            Debug.Log("No characters or baseCharacter found in Resources/scriptableObjects/characters");
-     return;
+            baseCharacterRND = baseCharacterAsScriptableCharacters;
         }
+        else
+        {
+            baseCharacterRND = Resources.Load<baseCharacter>("scriptableObjects/characters/baseCharacter");
+        }
+
+        // if ((characters == null || characters.Length == 0) && baseCharacterRND == null)       //useful for debugging but not nesscesary for final build
+        // {
+        //     Debug.Log("No characters or baseCharacter found in Resources/scriptableObjects/characters");
+        //     return;
+        // }
 
 
         if (characters != null && characters.Length > 0)
@@ -80,15 +86,15 @@ public class characterManager : MonoBehaviour
 
             if (currentCharacterIndex == 9 && rndExists == false)
             {
-                OfficePanel.SetActive(false);
-                NewsPanel.SetActive(true);
-                // sceneChanger.changeScene(NewsPanel);
+                // OfficePanel.SetActive(false);
+                // NewsPanel.SetActive(true);
+                sceneChanger.changeScene(NewsPanel);
             }
             else if (currentCharacterIndex == 12 && rndExists == false)
             {
-                OfficePanel.SetActive(false);
-                NewsPanel.SetActive(true);
-                // sceneChanger.changeScene(NewsPanel);
+                // OfficePanel.SetActive(false);
+                // NewsPanel.SetActive(true);
+                sceneChanger.changeScene(NewsPanel);
             }
     
         Debug.Log("Checking if round is over at character index: " + currentCharacterIndex);
@@ -103,18 +109,22 @@ public class characterManager : MonoBehaviour
         if (baseInsertedPending)
         {
             baseInsertedPending = false;
+
             if (characters != null && currentCharacterIndex >= 0 && currentCharacterIndex < characters.Length)
+            {
                 currentCharacter = characters[currentCharacterIndex];
+            }
             else if (baseCharacterRND != null)
+            {
                 currentCharacter = baseCharacterRND;
+            }
+
             Debug.Log("Showing array character after inserted base for index: " + currentCharacterIndex);
             checkRoundOver();
             return;
         }
 
         // Normal advance: move to next index and decide whether to insert baseCharacter as an extra
-       
-       
         currentCharacterIndex++;
 
         if (characters != null && currentCharacterIndex < characters.Length)
@@ -130,6 +140,7 @@ public class characterManager : MonoBehaviour
                     baseInsertedPending = true;
                     Debug.Log($"baseCharacter inserted as extra ({baseCharacterRND.chanceToAppear}%) at index {currentCharacterIndex} (roll={roll})");
                     checkRoundOver();
+                    
                     if (rndExists == true)
                     {
                         rndExists = false;

@@ -4,7 +4,7 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.TextCore.Text;
 
-namespace DialougeSystem
+namespace DialougeSystem 
 
 {
     public class DialougeBaseClass : MonoBehaviour

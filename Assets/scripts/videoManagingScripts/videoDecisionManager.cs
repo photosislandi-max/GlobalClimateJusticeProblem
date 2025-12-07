@@ -22,7 +22,7 @@ public class videoDecisionManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    public void AddNoVideo(VideoClip clip)
+    public void AddVideo(VideoClip clip)
     {
         if (clip != null)
             videosToPlay.Add(clip);

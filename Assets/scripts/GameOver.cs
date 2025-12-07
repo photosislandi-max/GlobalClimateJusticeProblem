@@ -13,7 +13,6 @@ public class GameOver : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    
     {
         bool charactersDone = manager.currentCharacterIndex == 12;
 

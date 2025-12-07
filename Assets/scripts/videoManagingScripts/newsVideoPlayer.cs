@@ -7,9 +7,7 @@ public class NewsVideoPlayer : MonoBehaviour
 {
     public VideoPlayer videoPlayer;
     private bool isPlayingQueue = false;
-
     public GameObject nextRoundButton;
-
     public VideoClip defaultClip;
 
     private void OnEnable()
@@ -30,9 +28,9 @@ public class NewsVideoPlayer : MonoBehaviour
             videoPlayer.clip = defaultClip;
             videoPlayer.Play();
 
-        // wait for default video to finish
-        while (videoPlayer.isPlaying)
-            yield return null;
+            // wait for default video to finish
+            while (videoPlayer.isPlaying)
+                yield return null;
         }
 
         foreach (var clip in queue)

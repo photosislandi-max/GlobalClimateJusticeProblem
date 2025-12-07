@@ -6,7 +6,7 @@ public class baseCharacter : ScriptableObject
 {
     public string charactername;
     public string issuedescription;
-// Sprite should be replaced by Image
+    // Sprite should be replaced by Image
     public Sprite characterArtwork;
     public Sprite speechBubbleArtwork;
 
