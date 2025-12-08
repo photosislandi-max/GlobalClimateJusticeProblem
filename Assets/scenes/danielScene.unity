@@ -4515,12 +4515,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66122628c88c845419c7604ea20b988a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  input: Due to increasing global climate injustice, developing and developed countries
-    from all over the world have banded together and asked for your assistance. They
-    have appointed you as a global climate justice judge. Your task is to spend a
-    set amount of money provided by developed countries. To promote global climate
-    justice while also working to mitigate climate change.                      Good
-    luck judge.
+  input: "The world has spoken - and now it\u2019s your turn to decide.          
+    You\u2019ve seen what\u2019s at stake, you\u2019ve learned how the forces of
+    our planet collide, and the decisions ahead won\u2019t be easy. But remember
+    you\u2019re not just a player. You are the final voice in a global struggle for
+    balance.                           Step forward. Take your seat. Let your judgement
+    shape the future. Are you ready?"
   tmp_Font: {fileID: 11400000, guid: 4d97113c8b5ad8e4ea187a70f904ee99, type: 2}
 --- !u!114 &1100151920
 MonoBehaviour:
@@ -4569,8 +4569,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 80
-  m_fontSizeBase: 80
+  m_fontSize: 60
+  m_fontSizeBase: 60
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
