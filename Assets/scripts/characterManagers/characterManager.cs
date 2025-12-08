@@ -21,8 +21,7 @@ public class characterManager : MonoBehaviour
     {
         Debug.Log("Initializing character array...");
         characters = Resources.LoadAll<scriptableCharacters>("scriptableObjects/characters");
- // Try to load the baseCharacter as a scriptableCharacters (so it has all fields), otherwise fallback
-            scriptableCharacters baseCharacterAsScriptableCharacters = Resources.Load<scriptableCharacters>("scriptableObjects/characters/baseCharacter");
+        scriptableCharacters baseCharacterAsScriptableCharacters = Resources.Load<scriptableCharacters>("scriptableObjects/characters/baseCharacter");
         if (baseCharacterAsScriptableCharacters != null)
             baseCharacterRND = baseCharacterAsScriptableCharacters;
         else
@@ -67,7 +66,7 @@ public class characterManager : MonoBehaviour
 
             if (currentCharacterIndex == 3)
             {
-                baseCharacterRND.chanceToAppear = 75;
+                baseCharacterRND.chanceToAppear = 15;
                 Debug.Log("Increased baseCharacter chanceToAppear to 15%");
             }
 
