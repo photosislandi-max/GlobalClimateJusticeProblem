@@ -6,6 +6,6 @@ using UnityEngine;
 public class scriptableCharacters : baseCharacter
 {
     public int noClimateBarInt;
-    public int noJusticeBarInt;
     public int noEconomyBarInt;
+    public int noJusticeBarInt;
 }
