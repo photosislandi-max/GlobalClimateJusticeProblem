@@ -15,9 +15,8 @@ MonoBehaviour:
   charactername: EthiopiaMan
   issuedescription: 'Ethiopia already has hydropower but wishes to expand, help them
     build even more to create even more green energy! '
-  characterArtwork: {fileID: 7898463608768064330, guid: 9e8386e3a945cdd4e8d6cc075aa05425, type: 3}
+  characterArtwork: {fileID: 3412948639053086552, guid: ae78797877bd65d40b0c08dbc7f00be9, type: 3}
   speechBubbleArtwork: {fileID: -7483706513750965665, guid: 4fc190a44ee6e2c4a852fdd5416be4fc, type: 3}
-  iconBubbleArtwork: {fileID: 0}
   yesClimateBarInt: 8
   yesJusticeBarInt: 9
   yesEconomyBarInt: -20

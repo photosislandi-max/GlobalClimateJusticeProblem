@@ -11,9 +11,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/scenes/chrisSceneX.unity
     guid: 71a571b614cb0214eaeec3d40c695d9e
-  - enabled: 1
+  - enabled: 0
     path: Assets/scenes/MainScene2.0.unity
     guid: fb849f2481c11ef43aee4c0bcba70643
+  - enabled: 1
+    path: Assets/scenes/willumScene.unity
+    guid: 1b690aa2c2c773043b5867dd8367c58f
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
