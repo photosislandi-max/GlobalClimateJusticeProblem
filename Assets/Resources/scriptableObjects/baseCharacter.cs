@@ -11,8 +11,8 @@ public class baseCharacter : ScriptableObject
     public Sprite speechBubbleArtwork;
 
     public int yesClimateBarInt;
-    public int yesJusticeBarInt;
     public int yesEconomyBarInt;
+    public int yesJusticeBarInt;
 
 
     public VideoClip videoNoButton;
