@@ -63,8 +63,14 @@ public class characterDisplay : DialougeBaseClass
         baseCharacter baseChar = Manager.currentCharacter;
         if (baseChar == null)
             return;
-            
-        yeseconomyEffect.text = baseChar.yesEconomyBarInt.ToString();
+        if (baseChar.chanceToAppear == Manager.RNDChance)
+        {
+            yeseconomyEffect.text = "+"+ baseChar.yesEconomyBarInt.ToString();
+        }
+        else
+        {
+            yeseconomyEffect.text = baseChar.yesEconomyBarInt.ToString();
+        }
 
         
 

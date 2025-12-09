@@ -13,16 +13,15 @@ MonoBehaviour:
   m_Name: 02thailandChar
   m_EditorClassIdentifier: 
   charactername: ThailandWoman
-  issuedescription: 'Wildfires in northern Thailand are getting worse from climate
-    change. Please help us extinguish and prevent them.   '
+  issuedescription: Wildfires in northern Thailand are getting worse from climate
+    change. Please help us extinguish and prevent them.
   characterArtwork: {fileID: 3051552595588622618, guid: c27cd2c332c857644b8a795c258187cb, type: 3}
   speechBubbleArtwork: {fileID: -7483706513750965665, guid: 4fc190a44ee6e2c4a852fdd5416be4fc, type: 3}
-  iconBubbleArtwork: {fileID: 0}
   yesClimateBarInt: 8
-  yesJusticeBarInt: 10
   yesEconomyBarInt: -30
+  yesJusticeBarInt: 10
   videoNoButton: {fileID: 32900000, guid: 84d789393f6efa6438ee13e03fb3d023, type: 3}
   chanceToAppear: 0
   noClimateBarInt: -12
-  noJusticeBarInt: -10
   noEconomyBarInt: 0
+  noJusticeBarInt: -10

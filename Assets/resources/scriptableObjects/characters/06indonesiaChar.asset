@@ -13,16 +13,15 @@ MonoBehaviour:
   m_Name: 06indonesiaChar
   m_EditorClassIdentifier: 
   charactername: IndonesiaWoman
-  issuedescription: 'Indonesia is a prime country for geothermal energy, and wants
-    to create more plants for geothermal energy, but needs more finances to do so. '
+  issuedescription: Indonesia is a prime country for geothermal energy, and wants
+    to create more plants for geothermal energy, but needs more finances to do so.
   characterArtwork: {fileID: 4035765520233981170, guid: ffaec516cf017784b822c94098c0c2a4, type: 3}
   speechBubbleArtwork: {fileID: -7483706513750965665, guid: 4fc190a44ee6e2c4a852fdd5416be4fc, type: 3}
-  iconBubbleArtwork: {fileID: 0}
   yesClimateBarInt: 5
-  yesJusticeBarInt: 5
   yesEconomyBarInt: -10
+  yesJusticeBarInt: 5
   videoNoButton: {fileID: 32900000, guid: 3360726a4daadfa40b4157041a929241, type: 3}
   chanceToAppear: 0
   noClimateBarInt: -5
-  noJusticeBarInt: 0
   noEconomyBarInt: 0
+  noJusticeBarInt: 0

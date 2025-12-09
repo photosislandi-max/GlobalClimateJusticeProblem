@@ -13,16 +13,16 @@ MonoBehaviour:
   m_Name: 03indiaChar
   m_EditorClassIdentifier: 
   charactername: IndiaMan
-  issuedescription: 'India emits a lot of CO2, but is also exposed to a lot of sunlight.  
-    Help us build solar panels to transition from fossil fuels to green energy '
+  issuedescription: "Should the EU compensate for the developing research of carbon
+    capture technologies in India?   We haven\u2019t got the resources to research
+    CCS technologies. "
   characterArtwork: {fileID: -5217629265340742322, guid: 316dc2af341094845bafb6238afdb675, type: 3}
   speechBubbleArtwork: {fileID: -7483706513750965665, guid: 4fc190a44ee6e2c4a852fdd5416be4fc, type: 3}
-  iconBubbleArtwork: {fileID: 0}
   yesClimateBarInt: 5
-  yesJusticeBarInt: 9
   yesEconomyBarInt: -20
+  yesJusticeBarInt: 9
   videoNoButton: {fileID: 32900000, guid: 9051888324bbf64418312eae2c9376b7, type: 3}
   chanceToAppear: 0
   noClimateBarInt: -5
-  noJusticeBarInt: 0
   noEconomyBarInt: 0
+  noJusticeBarInt: 0

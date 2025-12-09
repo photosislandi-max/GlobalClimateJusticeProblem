@@ -15,7 +15,7 @@ public class characterManager : MonoBehaviour
     public baseCharacter baseCharacterRND; 
     public bool baseInsertedPending = false;
     public bool rndExists = false;
-    private int RNDChance = 15;
+    public int RNDChance = 15;
     public void initCharacterArray()
     {
         Debug.Log("Initializing character array...");
