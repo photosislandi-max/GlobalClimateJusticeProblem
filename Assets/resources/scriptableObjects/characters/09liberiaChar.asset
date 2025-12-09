@@ -16,12 +16,11 @@ MonoBehaviour:
   issuedescription: I NEED AN ISSUE
   characterArtwork: {fileID: -8745203566507509269, guid: 2f725337a65a75c4cae7bb69745d02b9, type: 3}
   speechBubbleArtwork: {fileID: -7483706513750965665, guid: 4fc190a44ee6e2c4a852fdd5416be4fc, type: 3}
-  iconBubbleArtwork: {fileID: 0}
-  yesClimateBarInt: 10
-  yesJusticeBarInt: 10
-  yesEconomyBarInt: -30
+  yesClimateBarInt: 9
+  yesJusticeBarInt: 12
+  yesEconomyBarInt: -20
   videoNoButton: {fileID: 32900000, guid: 7284df772f6574540bc95136b21acdac, type: 3}
   chanceToAppear: 0
-  noClimateBarInt: -3
+  noClimateBarInt: -11
   noJusticeBarInt: 0
   noEconomyBarInt: 0
