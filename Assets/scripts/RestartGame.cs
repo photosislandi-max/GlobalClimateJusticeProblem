@@ -11,6 +11,6 @@ public class Restart : MonoBehaviour
         staticBarIntergers.EconomyBar = 30;
         characterManager.currentCharacterIndex = 0;
         // Load spillet igen
-        SceneManager.LoadScene("danielScene");
+        SceneManager.LoadScene("MainScene2.0");
     }
 }

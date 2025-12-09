@@ -15,6 +15,7 @@ public class characterManager : MonoBehaviour
     public baseCharacter baseCharacterRND; 
     public bool baseInsertedPending = false;
     public bool rndExists = false;
+    private int RNDChance = 15;
     public void initCharacterArray()
     {
         Debug.Log("Initializing character array...");
@@ -27,12 +28,12 @@ public class characterManager : MonoBehaviour
 
         if (characters != null && characters.Length > 0)
         {
-            currentCharacterIndex = Mathf.Clamp(currentCharacterIndex, 0, characters.Length - 1);
+            // currentCharacterIndex = Mathf.Clamp(currentCharacterIndex, 0, characters.Length - 1);
             currentCharacter = characters[currentCharacterIndex];
         }
         else if (baseCharacterRND != null)
         {
-            currentCharacter = baseCharacterRND;
+            // currentCharacter = baseCharacterRND;
         }
         
     }
@@ -49,36 +50,37 @@ public class characterManager : MonoBehaviour
     public void checkRoundOver()
     {   
             Debug.Log("checking chance to appear and index" + currentCharacterIndex);
-            if (currentCharacterIndex <= 0 || currentCharacterIndex == 1 || currentCharacterIndex == 2)
+            if (currentCharacterIndex <= 0)              //currentCharacterIndex == 1 || currentCharacterIndex == 2)
             {
                 baseCharacterRND.chanceToAppear = 0;
                 Debug.Log("Increased baseCharacter chanceToAppear to 0%");
             }
 
-            if (currentCharacterIndex == 3)
+            if (currentCharacterIndex == 1)
             {
-                baseCharacterRND.chanceToAppear = 75;
+                baseCharacterRND.chanceToAppear = RNDChance;
                 Debug.Log("Increased baseCharacter chanceToAppear to 15%");
             }
         Debug.Log("chance to appear" + baseCharacterRND.chanceToAppear);
         Debug.Log("checking value of rndExist bool"+ rndExists);
         
-            if (currentCharacterIndex == 6 && rndExists == false)
+            if (currentCharacterIndex == 4 && rndExists == false)
             {
                 sceneChanger.changeScene(NewsPanel);
             }
         Debug.Log("Checking if round is over at character index: " + currentCharacterIndex);
 
-            if (currentCharacterIndex == 9 && rndExists == false)
+            if (currentCharacterIndex == 7 && rndExists == false)
             {
-                
+                sceneChanger.changeScene(NewsPanel);
+            }
+            if (currentCharacterIndex == 10 && rndExists == false)
+            {
                 sceneChanger.changeScene(NewsPanel);
             }
             else if (currentCharacterIndex == 12 && rndExists == false)
             {
-                OfficePanel.SetActive(false);
-                NewsPanel.SetActive(true);
-                // sceneChanger.changeScene(NewsPanel);
+                sceneChanger.changeScene(NewsPanel);
             }
     
         Debug.Log("Checking if round is over at character index: " + currentCharacterIndex);
