@@ -19,6 +19,6 @@ public class RestartGame : MonoBehaviour
         staticBarIntergers.climateBar = 70;
         staticBarIntergers.justiceBar = 0; 
         staticBarIntergers.EconomyBar = 30;
-        SceneManager.LoadScene("MainScene2.0");
+        SceneManager.LoadScene("willumScene");
     }
 }
