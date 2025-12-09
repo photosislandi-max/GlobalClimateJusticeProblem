@@ -6,11 +6,9 @@ public class baseCharacter : ScriptableObject
 {
     public string charactername;
     public string issuedescription;
-
+// Sprite should be replaced by Image
     public Sprite characterArtwork;
     public Sprite speechBubbleArtwork;
-
-    public Sprite iconBubbleArtwork;
 
     public int yesClimateBarInt;
     public int yesJusticeBarInt;
@@ -18,6 +16,7 @@ public class baseCharacter : ScriptableObject
 
 
     public VideoClip videoNoButton;
+
     [Range(0,100)]
     public int chanceToAppear = 0; 
 }

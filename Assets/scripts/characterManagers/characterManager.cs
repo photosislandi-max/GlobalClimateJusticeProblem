@@ -1,49 +1,40 @@
 using System;
+using Unity.VisualScripting;
 using UnityEngine;
 
 
-
-//This script has our array and will manage our characters in the game
 public class characterManager : MonoBehaviour
 {
     public SceneChanger sceneChanger;
     public GameObject OfficePanel;
     public GameObject NewsPanel;
-    private GameObject endScreen;
-    public scriptableCharacters[] characters; //Array to hold our characters
-    public int currentCharacterIndex = 0; //Index to track the current character
-    public baseCharacter currentCharacter; //Reference to the current character 
-    public baseCharacter baseCharacterSO; // Reference to baseCharacter ScriptableObject
-    // If true, we previously showed baseCharacter as an inserted extra and must now show
-    // the array character for the same index without incrementing the index.
-    private bool baseInsertedPending = false;
+    public GameObject endScene;
+    public scriptableCharacters[] characters; 
+    public int currentCharacterIndex = 0; 
+    public baseCharacter currentCharacter; 
+    public baseCharacter baseCharacterRND; 
+    public bool baseInsertedPending = false;
     public bool rndExists = false;
     public void initCharacterArray()
     {
         Debug.Log("Initializing character array...");
         characters = Resources.LoadAll<scriptableCharacters>("scriptableObjects/characters");
-        // Try to load the baseCharacter as a scriptableCharacters (so it has all fields), otherwise fallback
-        scriptableCharacters baseAsSC = Resources.Load<scriptableCharacters>("scriptableObjects/characters/baseCharacter");
-        if (baseAsSC != null)
-            baseCharacterSO = baseAsSC;
+        scriptableCharacters baseCharacterAsScriptableCharacters = Resources.Load<scriptableCharacters>("scriptableObjects/characters/baseCharacter");
+        if (baseCharacterAsScriptableCharacters != null)
+            baseCharacterRND = baseCharacterAsScriptableCharacters;
         else
-            baseCharacterSO = Resources.Load<baseCharacter>("scriptableObjects/characters/baseCharacter");
+            baseCharacterRND = Resources.Load<baseCharacter>("scriptableObjects/characters/baseCharacter");
 
-        if ((characters == null || characters.Length == 0) && baseCharacterSO == null)
-        {
-            Debug.Log("No characters or baseCharacter found in Resources/scriptableObjects/characters");
-            return;
-        }
-        // Select the initial current character (start with first array entry if available)
         if (characters != null && characters.Length > 0)
         {
             currentCharacterIndex = Mathf.Clamp(currentCharacterIndex, 0, characters.Length - 1);
             currentCharacter = characters[currentCharacterIndex];
         }
-        else if (baseCharacterSO != null)
+        else if (baseCharacterRND != null)
         {
-            currentCharacter = baseCharacterSO;
+            currentCharacter = baseCharacterRND;
         }
+        
     }
     void Start()
     {
@@ -51,20 +42,27 @@ public class characterManager : MonoBehaviour
         Debug.Log("Character Manager initialized with " + (characters == null ? 0 : characters.Length) + " characters.");
     }
 
-    // Update is called once per frame
     void Update()
     {
         
     }
     public void checkRoundOver()
-    {
-            if (currentCharacterIndex == 3)
+    {   
+            Debug.Log("checking chance to appear and index" + currentCharacterIndex);
+            if (currentCharacterIndex <= 0 || currentCharacterIndex == 1 || currentCharacterIndex == 2)
             {
-                baseCharacterSO.chanceToAppear = 15;
-                Debug.Log("Increased baseCharacter chanceToAppear to 15%");
+                baseCharacterRND.chanceToAppear = 0;
+                Debug.Log("Increased baseCharacter chanceToAppear to 0%");
             }
 
+            if (currentCharacterIndex == 3)
+            {
+                baseCharacterRND.chanceToAppear = 75;
+                Debug.Log("Increased baseCharacter chanceToAppear to 15%");
+            }
+        Debug.Log("chance to appear" + baseCharacterRND.chanceToAppear);
         Debug.Log("checking value of rndExist bool"+ rndExists);
+        
             if (currentCharacterIndex == 6 && rndExists == false)
             {
                 sceneChanger.changeScene(NewsPanel);
@@ -73,9 +71,8 @@ public class characterManager : MonoBehaviour
 
             if (currentCharacterIndex == 9 && rndExists == false)
             {
-                OfficePanel.SetActive(false);
-                NewsPanel.SetActive(true);
-                // sceneChanger.changeScene(NewsPanel);
+                
+                sceneChanger.changeScene(NewsPanel);
             }
             else if (currentCharacterIndex == 12 && rndExists == false)
             {
@@ -89,39 +86,31 @@ public class characterManager : MonoBehaviour
 
     public void AdvanceToNextCharacter()
 {
-        // If we previously inserted the baseCharacter as an extra, next call should show
-        // the array character for the same index (do not increment index).
-  
-
         if (baseInsertedPending)
         {
             baseInsertedPending = false;
             if (characters != null && currentCharacterIndex >= 0 && currentCharacterIndex < characters.Length)
                 currentCharacter = characters[currentCharacterIndex];
-            else if (baseCharacterSO != null)
-                currentCharacter = baseCharacterSO;
+            //  else if (baseCharacterRND != null)
+            //      currentCharacter = baseCharacterRND;
             Debug.Log("Showing array character after inserted base for index: " + currentCharacterIndex);
             checkRoundOver();
             return;
         }
-
-        // Normal advance: move to next index and decide whether to insert baseCharacter as an extra
-       
        
         currentCharacterIndex++;
 
         if (characters != null && currentCharacterIndex < characters.Length)
         {
-            if (baseCharacterSO != null && baseCharacterSO.chanceToAppear > 0)
+            if (baseCharacterRND != null && baseCharacterRND.chanceToAppear > 0)
             {
                 int roll = UnityEngine.Random.Range(0, 100);
-                if (roll < baseCharacterSO.chanceToAppear)
+                if (roll < baseCharacterRND.chanceToAppear)
                 {
-                    // Insert baseCharacter as an extra popup before showing the array character
                     rndExists = true;
-                    currentCharacter = baseCharacterSO;
+                    currentCharacter = baseCharacterRND;
                     baseInsertedPending = true;
-                    Debug.Log($"baseCharacter inserted as extra ({baseCharacterSO.chanceToAppear}%) at index {currentCharacterIndex} (roll={roll})");
+                    Debug.Log($"baseCharacter inserted as extra ({baseCharacterRND.chanceToAppear}%) at index {currentCharacterIndex} (roll={roll})");
                     checkRoundOver();
                     if (rndExists == true)
                     {
@@ -130,8 +119,6 @@ public class characterManager : MonoBehaviour
                     return;
                 }
             }
-
-            // No insertion: show the array character for the new index
             currentCharacter = characters[currentCharacterIndex];
         }
         else
@@ -141,11 +128,7 @@ public class characterManager : MonoBehaviour
 
         Debug.Log("Advanced to character index: " + currentCharacterIndex);
         checkRoundOver();
-}
-
-    // (Removed ChooseCharacterForIndex - insertion is handled by AdvanceToNextCharacter)
-
-    
+}    
     }
 
 

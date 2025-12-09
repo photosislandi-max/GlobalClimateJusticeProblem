@@ -28,7 +28,7 @@ public class buttonActivator : MonoBehaviour
     public void addthree()
     {
         // increment the EconomyBar by 3
-        staticBarIntergers.EconomyBar += 3;
+        staticBarIntergers.EconomyBar += 30;
         Debug.Log("Economy increased by 3. New value: " + staticBarIntergers.EconomyBar);
     }
 }

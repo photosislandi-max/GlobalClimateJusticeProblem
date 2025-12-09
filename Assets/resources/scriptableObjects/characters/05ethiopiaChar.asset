@@ -17,10 +17,12 @@ MonoBehaviour:
     build even more to create even more green energy! '
   characterArtwork: {fileID: 7898463608768064330, guid: 9e8386e3a945cdd4e8d6cc075aa05425, type: 3}
   speechBubbleArtwork: {fileID: -7483706513750965665, guid: 4fc190a44ee6e2c4a852fdd5416be4fc, type: 3}
+  iconBubbleArtwork: {fileID: 0}
   yesClimateBarInt: 8
   yesJusticeBarInt: 9
-  yesEconomyBarInt: -2
+  yesEconomyBarInt: -20
+  videoNoButton: {fileID: 32900000, guid: 265b1423ca1b3f443a168fb2d44da4da, type: 3}
+  chanceToAppear: 0
   noClimateBarInt: -7
   noJusticeBarInt: 0
   noEconomyBarInt: 0
-  videoNoButton: {fileID: 32900000, guid: 265b1423ca1b3f443a168fb2d44da4da, type: 3}
