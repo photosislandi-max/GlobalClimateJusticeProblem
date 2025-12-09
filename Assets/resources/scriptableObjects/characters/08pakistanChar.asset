@@ -13,11 +13,9 @@ MonoBehaviour:
   m_Name: 08pakistanChar
   m_EditorClassIdentifier: 
   charactername: PakistanMan
-  issuedescription: "Pakistan is facing increasing energy shortages and rising electricity
-    costs. To stabilize our power grid and reduce emissions, we want to transition
-    to modern nuclear technology \u2014 but we cannot afford to develop and maintain
-    these reactors on our own. Will the EU support our investment in safer and greener
-    nuclear energy?"
+  issuedescription: Pakistan faces energy shortages and rising electricity costs.
+    To stabilize our grid and cut emissions, we aim to adopt nuclear technology.
+    Will you help support us?
   characterArtwork: {fileID: -6070702301985517175, guid: ddd38f43da061c142a4d9371324f9b6f, type: 3}
   speechBubbleArtwork: {fileID: -7483706513750965665, guid: 4fc190a44ee6e2c4a852fdd5416be4fc, type: 3}
   yesClimateBarInt: 8

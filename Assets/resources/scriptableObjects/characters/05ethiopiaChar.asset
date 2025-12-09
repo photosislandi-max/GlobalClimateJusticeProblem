@@ -15,7 +15,7 @@ MonoBehaviour:
   charactername: EthiopiaMan
   issuedescription: Ethiopia already has hydropower but wishes to expand, help us
     move further away from fosille fuels and toward a greener future.
-  characterArtwork: {fileID: 7898463608768064330, guid: 9e8386e3a945cdd4e8d6cc075aa05425, type: 3}
+  characterArtwork: {fileID: -7080653863148319459, guid: 726da7495aedd8143bd15b9843153666, type: 3}
   speechBubbleArtwork: {fileID: -7483706513750965665, guid: 4fc190a44ee6e2c4a852fdd5416be4fc, type: 3}
   yesClimateBarInt: 8
   yesEconomyBarInt: -20

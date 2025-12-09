@@ -13,11 +13,8 @@ MonoBehaviour:
   m_Name: 07brazilChar
   m_EditorClassIdentifier: 
   charactername: BrazilMan
-  issuedescription: Brazil faces pressure to stop Amazon deforestation, but stopping
-    it could harm our economy, especially in agriculture and cattle ranching, which
-    many rely on. Without financial help, Brazil can't protect the rainforest as
-    needed. Should the EU assist Brazil in stopping deforestation and provide economic
-    support?
+  issuedescription: 'The Amazon rainforest is getting drier and drier! Join us in
+    our effort to protect the rainforest and stop deforestation. '
   characterArtwork: {fileID: -3704969827463629111, guid: c54081acd5110f0468f2fb3c31f9a25f, type: 3}
   speechBubbleArtwork: {fileID: -7483706513750965665, guid: 4fc190a44ee6e2c4a852fdd5416be4fc, type: 3}
   yesClimateBarInt: 10
