@@ -27,7 +27,14 @@ public class SceneChanger : MonoBehaviour
         newsRoom.SetActive(false);
         mainScene.SetActive(false);
         endScreen.SetActive(false);
-
+        // if (staticBarIntergers.climateBar <= 0)
+        // {
+        //     endScreen.SetActive(true);
+        //     return;
+        // }
+        // else
+        // {
+        // }
         nameOfPanel.SetActive(true);
        
     }

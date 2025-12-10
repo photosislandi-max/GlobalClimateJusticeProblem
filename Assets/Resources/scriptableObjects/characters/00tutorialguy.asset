@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: 00tutorialguy
   m_EditorClassIdentifier: 
   charactername: 
-  issuedescription: Hey new climate judge! My name is Dr. Croissant, I am your personal
-    scientist and also here to teach you the ropes. Try pressing that big green button
-    there!
+  issuedescription: 'Hello again! You''re ready to start your work as the climate
+    judge. I will be going off and do some research and development, when i am ready
+    i will come again and let you reap the rewards of science! '
   characterArtwork: {fileID: 4991248251315979534, guid: 236b2aab1a4ad1f40a782b5619ecba2f, type: 3}
   speechBubbleArtwork: {fileID: -7483706513750965665, guid: 4fc190a44ee6e2c4a852fdd5416be4fc, type: 3}
   yesClimateBarInt: 0

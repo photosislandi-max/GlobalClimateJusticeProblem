@@ -915,8 +915,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 33.5856, y: -235}
-  m_SizeDelta: {x: 371.6597, y: 109.34}
+  m_AnchoredPosition: {x: 0.000030518, y: -239.97}
+  m_SizeDelta: {x: 599.5903, y: 109.34}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &140827914
 MonoBehaviour:
@@ -3446,7 +3446,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   climateText: {fileID: 378648604}
   justiceText: {fileID: 951303835}
-  economyText: {fileID: 964453352}
   characterManager: {fileID: 2103636603}
   endingTitleText: {fileID: 1972455726}
   endingDescriptionText: {fileID: 140827914}
@@ -3959,7 +3958,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 964453350}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
@@ -5928,7 +5927,7 @@ MonoBehaviour:
   scenechanger: {fileID: 1544345147}
   gameRunning: 0
   isGameOver: 0
-  endScreen: {fileID: 0}
+  endScreen: {fileID: 865039966}
   officePanel: {fileID: 1386231550}
 --- !u!4 &1274208999
 Transform:
@@ -8677,7 +8676,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   climateText: {fileID: 0}
   justiceText: {fileID: 0}
-  economyText: {fileID: 0}
   characterManager: {fileID: 0}
   endingTitleText: {fileID: 0}
   endingDescriptionText: {fileID: 0}
@@ -8715,8 +8713,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 43, y: 217}
-  m_SizeDelta: {x: 311.45, y: 91.049}
+  m_AnchoredPosition: {x: 0, y: 249.11}
+  m_SizeDelta: {x: 669.5164, y: 91.049}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1972455726
 MonoBehaviour:
@@ -8772,7 +8770,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -9443,6 +9441,7 @@ MonoBehaviour:
   baseCharacterRND: {fileID: 0}
   baseInsertedPending: 0
   rndExists: 0
+  RNDChance: 15
 --- !u!4 &2103636604
 Transform:
   m_ObjectHideFlags: 0

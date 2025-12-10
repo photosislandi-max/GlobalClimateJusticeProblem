@@ -22,7 +22,7 @@ MonoBehaviour:
   yesClimateBarInt: 10
   yesEconomyBarInt: -20
   yesJusticeBarInt: 10
-  videoNoButton: {fileID: 32900000, guid: 598d3b54722a7234eba67f46efdf516e, type: 3}
+  videoNoButton: {fileID: 32900000, guid: 0437ac472ac175d4a91f80723b50300c, type: 3}
   chanceToAppear: 0
   noClimateBarInt: -13
   noEconomyBarInt: 0

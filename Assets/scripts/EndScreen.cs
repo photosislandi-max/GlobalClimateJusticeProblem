@@ -8,7 +8,7 @@ public class EndScreenManager : MonoBehaviour
     // UI-tekstfelter som du tr�kker ind fra Unity
     public TMP_Text climateText;
     public TMP_Text justiceText;
-    public TMP_Text economyText;
+    // public TMP_Text economyText;
     
     public characterManager characterManager;
     public TMP_Text endingTitleText;
@@ -32,7 +32,7 @@ public class EndScreenManager : MonoBehaviour
         // Vis tallene
         climateText.text = "Climate: " + c + "   (" + GetRating(c) + ")";
         justiceText.text = "Justice: " + j + "   (" + GetRating(j) + ")";
-        economyText.text = "Economy: " + e + "   (" + GetRating(e) + ")";
+        // economyText.text = "Economy: " + e + "   (" + GetRating(e) + ")";
     }
 
     // Returnerer en tekst baseret p� scoren
@@ -61,12 +61,12 @@ public class EndScreenManager : MonoBehaviour
         }
         else if (j >= c && j >= e)
         {
-            endingTitleText.text = "Jutice!";
+            endingTitleText.text = "Superior Global Judge!";
             endingDescriptionText.text = "You chose to focus on climatejustice";
         }
         else
         {
-            endingTitleText.text = "Economical Boom";
+            endingTitleText.text = "You chose greed at the expense of climate and justice";
             endingDescriptionText.text = "You focused on the economy.";
         }
         
@@ -75,11 +75,11 @@ public class EndScreenManager : MonoBehaviour
     public void RestartGame()
     {
         // Nulstil score hvis I vil starte forfra
-        staticBarIntergers.climateBar = 70;
+        staticBarIntergers.climateBar = 50;
         staticBarIntergers.justiceBar = 0;
-        staticBarIntergers.EconomyBar = 3;
+        staticBarIntergers.EconomyBar = 30;
         characterManager.currentCharacterIndex = 0;
         // Load spillet igen
-        SceneManager.LoadScene("jeppeScene");
+        SceneManager.LoadScene("MainScene3.0");
     }
 }

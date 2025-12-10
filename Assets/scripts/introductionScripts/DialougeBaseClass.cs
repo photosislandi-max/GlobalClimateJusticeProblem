@@ -18,7 +18,7 @@ namespace DialougeSystem
             
             {
                 textHolder.text += input[i];
-                yield return new WaitForSeconds(0.06f);
+                yield return new WaitForSeconds(0.035f);
             }
         }
     }

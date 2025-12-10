@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: baseCharacter
   m_EditorClassIdentifier: 
   charactername: R&Dchar
-  issuedescription: I've come with great news! I've found great climate research
-    through the means you've spent. We can implement it into other countries and
-    help them.
+  issuedescription: Great news! I've just discovered a new technology to help reduce
+    emissions. We can implement it into other countries and help them, and it will
+    contribute to your economy as well!
   characterArtwork: {fileID: 4991248251315979534, guid: 236b2aab1a4ad1f40a782b5619ecba2f, type: 3}
   speechBubbleArtwork: {fileID: -7483706513750965665, guid: 4fc190a44ee6e2c4a852fdd5416be4fc, type: 3}
   yesClimateBarInt: 5

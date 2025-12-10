@@ -23,6 +23,7 @@ public class GameManager : MonoBehaviour
             Debug.Log("Game Over: Climate Bar Depleted");
             isGameOver = true;
             // staticBarIntergers.climateBar = 0;
+
             scenechanger.changeScene(endScreen);
             // endScreen.SetActive(true);
         }
