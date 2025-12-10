@@ -6,6 +6,7 @@ public class SceneChanger : MonoBehaviour
     public GameObject mainScene;
     // public GameObject endScene;
     public GameObject newsRoom;
+    public GameManager gManager;
     public int currentCharacterIndex; 
 
     public GameObject endScreen;
@@ -27,15 +28,15 @@ public class SceneChanger : MonoBehaviour
         newsRoom.SetActive(false);
         mainScene.SetActive(false);
         endScreen.SetActive(false);
-        // if (staticBarIntergers.climateBar <= 0)
-        // {
-        //     endScreen.SetActive(true);
-        //     return;
-        // }
-        // else
-        // {
-        // }
-        nameOfPanel.SetActive(true);
+        if (gManager.isGameOver == true)
+        {
+            newsRoom.SetActive(true);
+            gManager.isGameOver = false;
+        }
+        else
+        {
+            nameOfPanel.SetActive(true);
+        }
        
     }
 }   

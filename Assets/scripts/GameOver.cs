@@ -19,7 +19,7 @@ public class GameOver : MonoBehaviour
 
         bool noVideosLeft = videoDecisionManager.Instance.videosToPlay.Count == 0;
     
-        if (charactersDone && noVideosLeft)
+        if (charactersDone && noVideosLeft || staticBarIntergers.climateBar <= 0)
         {
             endSceneButton.SetActive(true);
         }
