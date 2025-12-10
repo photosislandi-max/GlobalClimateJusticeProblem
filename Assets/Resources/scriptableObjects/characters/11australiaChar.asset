@@ -13,10 +13,9 @@ MonoBehaviour:
   m_Name: 11australiaChar
   m_EditorClassIdentifier: 
   charactername: AustraliaWoman
-  issuedescription: 'Australia is under intense pressure to protect the Great Barrier
-    Reef as rising ocean temperatures cause mass coral bleaching. We want to accelerate
-    climate action and reduce emissions, but the transition away from coal and gas
-    threatens thousands of jobs and international economies. '
+  issuedescription: Australia is under pressure to protect the Great Barrier Reef.
+    The rising temperatures will cause mass coral bleaching. Help us transition from
+    coal to green energy to susatin the reef.
   characterArtwork: {fileID: -1090771839756883065, guid: 728ffcda20fd4884bb6c7e8b26fd5eae, type: 3}
   speechBubbleArtwork: {fileID: -7483706513750965665, guid: 4fc190a44ee6e2c4a852fdd5416be4fc, type: 3}
   yesClimateBarInt: 10
