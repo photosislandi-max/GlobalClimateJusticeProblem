@@ -19,11 +19,11 @@ MonoBehaviour:
     threatens thousands of jobs and international economies. '
   characterArtwork: {fileID: -1090771839756883065, guid: 728ffcda20fd4884bb6c7e8b26fd5eae, type: 3}
   speechBubbleArtwork: {fileID: -7483706513750965665, guid: 4fc190a44ee6e2c4a852fdd5416be4fc, type: 3}
-  yesClimateBarInt: 5
-  yesEconomyBarInt: -15
-  yesJusticeBarInt: 8
+  yesClimateBarInt: 10
+  yesEconomyBarInt: -20
+  yesJusticeBarInt: 10
   videoNoButton: {fileID: 32900000, guid: 598d3b54722a7234eba67f46efdf516e, type: 3}
   chanceToAppear: 0
-  noClimateBarInt: -8
+  noClimateBarInt: -13
   noEconomyBarInt: 0
   noJusticeBarInt: 0

@@ -6,7 +6,7 @@ public class Restart : MonoBehaviour
    public void RestartGame()
     {
         // Nulstil score hvis I vil starte forfra
-        staticBarIntergers.climateBar = 70;
+        staticBarIntergers.climateBar = 50;
         staticBarIntergers.justiceBar = 0;
         staticBarIntergers.EconomyBar = 30;
         characterManager.currentCharacterIndex = 0;

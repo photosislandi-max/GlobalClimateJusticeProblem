@@ -18,11 +18,11 @@ MonoBehaviour:
     into expanding deserts."
   characterArtwork: {fileID: -6266479781525812798, guid: a6f2b0adc9c49374aabedad2ddd83416, type: 3}
   speechBubbleArtwork: {fileID: -7483706513750965665, guid: 4fc190a44ee6e2c4a852fdd5416be4fc, type: 3}
-  yesClimateBarInt: 10
-  yesEconomyBarInt: -20
-  yesJusticeBarInt: 10
+  yesClimateBarInt: 11
+  yesEconomyBarInt: -25
+  yesJusticeBarInt: 13
   videoNoButton: {fileID: 32900000, guid: 598d3b54722a7234eba67f46efdf516e, type: 3}
   chanceToAppear: 0
-  noClimateBarInt: -5
+  noClimateBarInt: -14
   noEconomyBarInt: 0
   noJusticeBarInt: 0

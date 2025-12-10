@@ -18,9 +18,8 @@ MonoBehaviour:
     help them.
   characterArtwork: {fileID: 4991248251315979534, guid: 236b2aab1a4ad1f40a782b5619ecba2f, type: 3}
   speechBubbleArtwork: {fileID: -7483706513750965665, guid: 4fc190a44ee6e2c4a852fdd5416be4fc, type: 3}
-  iconBubbleArtwork: {fileID: 0}
   yesClimateBarInt: 5
+  yesEconomyBarInt: 10
   yesJusticeBarInt: 0
-  yesEconomyBarInt: 20
   videoNoButton: {fileID: 32900000, guid: 8c5d386948cc8bc4ca3581f292d36b12, type: 3}
   chanceToAppear: 15

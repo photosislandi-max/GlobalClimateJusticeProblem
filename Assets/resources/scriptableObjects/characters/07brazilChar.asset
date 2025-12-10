@@ -17,11 +17,11 @@ MonoBehaviour:
     our effort to protect the rainforest and stop deforestation. '
   characterArtwork: {fileID: -3704969827463629111, guid: c54081acd5110f0468f2fb3c31f9a25f, type: 3}
   speechBubbleArtwork: {fileID: -7483706513750965665, guid: 4fc190a44ee6e2c4a852fdd5416be4fc, type: 3}
-  yesClimateBarInt: 10
-  yesEconomyBarInt: -40
-  yesJusticeBarInt: 16
+  yesClimateBarInt: 11
+  yesEconomyBarInt: -30
+  yesJusticeBarInt: 14
   videoNoButton: {fileID: 32900000, guid: 27546422d8ee58e41a29200bba566062, type: 3}
   chanceToAppear: 0
-  noClimateBarInt: -2
+  noClimateBarInt: -12
   noEconomyBarInt: 0
-  noJusticeBarInt: -4
+  noJusticeBarInt: 0

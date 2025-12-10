@@ -17,11 +17,11 @@ MonoBehaviour:
     in increased poverty, food insecurity, and water scarcity. We need help.
   characterArtwork: {fileID: -4662405338867617038, guid: 78372d0fa1a2e3240a2844776fee58c4, type: 3}
   speechBubbleArtwork: {fileID: -7483706513750965665, guid: 4fc190a44ee6e2c4a852fdd5416be4fc, type: 3}
-  yesClimateBarInt: 4
-  yesEconomyBarInt: -10
-  yesJusticeBarInt: 8
+  yesClimateBarInt: 7
+  yesEconomyBarInt: -15
+  yesJusticeBarInt: 10
   videoNoButton: {fileID: 32900000, guid: 3bc53f32bc3a2ec45a7a77af0938e7e2, type: 3}
   chanceToAppear: 0
-  noClimateBarInt: -4
+  noClimateBarInt: -12
   noEconomyBarInt: 0
-  noJusticeBarInt: -4
+  noJusticeBarInt: 0

@@ -19,10 +19,10 @@ MonoBehaviour:
   characterArtwork: {fileID: -6070702301985517175, guid: ddd38f43da061c142a4d9371324f9b6f, type: 3}
   speechBubbleArtwork: {fileID: -7483706513750965665, guid: 4fc190a44ee6e2c4a852fdd5416be4fc, type: 3}
   yesClimateBarInt: 8
-  yesEconomyBarInt: -30
-  yesJusticeBarInt: 7
+  yesEconomyBarInt: -5
+  yesJusticeBarInt: 9
   videoNoButton: {fileID: 32900000, guid: c427179da27b51f4684646e9cc814599, type: 3}
   chanceToAppear: 0
-  noClimateBarInt: -5
+  noClimateBarInt: -13
   noEconomyBarInt: 0
   noJusticeBarInt: 0
