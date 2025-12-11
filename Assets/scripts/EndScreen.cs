@@ -30,6 +30,7 @@ public class EndScreenManager : MonoBehaviour
         int e = staticBarIntergers.EconomyBar;
 
         // Vis tallene
+        if (c < 0) c = 0;
         climateText.text = "Climate: " + c + "   (" + GetRating(c) + ")";
         justiceText.text = "Justice: " + j + "   (" + GetRating(j) + ")";
         // economyText.text = "Economy: " + e + "   (" + GetRating(e) + ")";
