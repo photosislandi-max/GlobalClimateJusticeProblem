@@ -3,7 +3,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public SceneChanger scenechanger;
-    public GameObject endScreen;
+    public GameObject newsPanel;
     public bool isGameOver = false;
     public GameObject officePanel;
 
@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
         if (officePanel.activeSelf == true && staticBarIntergers.climateBar <= 0) // Check if the office panel is active and climate bar is 0 or less (should only trigger when in office and Game Over condition met)
         {
             isGameOver = true;
-            scenechanger.changeScene(endScreen);
+            scenechanger.changeScene(newsPanel);
         }
 
         // Clamp the bar values between 0 and 100

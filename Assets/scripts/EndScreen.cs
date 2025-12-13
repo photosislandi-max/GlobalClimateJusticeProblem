@@ -5,38 +5,36 @@ using System.Text.RegularExpressions;
 
 public class EndScreenManager : MonoBehaviour
 {
-    // UI-tekstfelter som du tr�kker ind fra Unity
+    // UI Elements to display scores and endings
     public TMP_Text climateText;
     public TMP_Text justiceText;
-    // public TMP_Text economyText;
-    
     public characterManager characterManager;
     public TMP_Text endingTitleText;
     public TMP_Text endingDescriptionText;
 
     void OnEnable()
     {
-        // N�r scenen starter, vis scores og ending
+        // When the end screen is enabled, show scores and ending
         ShowScores();
         ShowEnding();
     }
 
     void ShowScores()
     {
-        // Gem scores lokalt s� det er lettere at arbejde med
+        // Save scores locally so it's easier to work with
         int c = staticBarIntergers.climateBar;
         Debug.Log("Climate Score: " + c);
         int j = staticBarIntergers.justiceBar;
         int e = staticBarIntergers.EconomyBar;
 
-        // Vis tallene
-        if (c < 0) c = 0;
+        // Display scores
+        if (c < 0) c = 0; // if climate score is negative, set to 0 to avoid displaying negative values
+
         climateText.text = "Climate: " + c + "   (" + GetRating(c) + ")";
         justiceText.text = "Justice: " + j + "   (" + GetRating(j) + ")";
-        // economyText.text = "Economy: " + e + "   (" + GetRating(e) + ")";
     }
 
-    // Returnerer en tekst baseret p� scoren
+    // Return a text rating based on score value
     string GetRating(int value)
     {
         if (value < 40)
@@ -48,13 +46,14 @@ public class EndScreenManager : MonoBehaviour
         return "Mediocre";
     }
 
+    // Determine and display the appropriate ending based on scores
     void ShowEnding()
     {
         int c = staticBarIntergers.climateBar;
         int j = staticBarIntergers.justiceBar;
         int e = staticBarIntergers.EconomyBar;
 
-        // Find den h�jeste score og v�lg ending
+        // Find the highest score and set ending accordingly
         if (c >= j && c >= e)
         {
             endingTitleText.text = "Green Future";
@@ -65,6 +64,11 @@ public class EndScreenManager : MonoBehaviour
             endingTitleText.text = "Superior Global Judge!";
             endingDescriptionText.text = "You chose to focus on climatejustice";
         }
+        else if (c <= 0)
+        {
+            endingTitleText.text = "Game Over - Climate Collapse";
+            endingDescriptionText.text = "Your neglect of the climate has led to catastrophic consequences.";
+        }
         else
         {
             endingTitleText.text = "You chose greed at the expense of climate and justice";
@@ -73,14 +77,16 @@ public class EndScreenManager : MonoBehaviour
         
     }
 
+    //Restart game by switching scene and resetting scores
     public void RestartGame()
     {
-        // Nulstil score hvis I vil starte forfra
+        // Reset scores and character index
         staticBarIntergers.climateBar = 50;
         staticBarIntergers.justiceBar = 0;
         staticBarIntergers.EconomyBar = 30;
         characterManager.currentCharacterIndex = 0;
-        // Load spillet igen
+        
+        // Load game again
         SceneManager.LoadScene("MainScene3.0");
     }
 }
