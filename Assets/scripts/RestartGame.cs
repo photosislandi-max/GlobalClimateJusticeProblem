@@ -10,6 +10,7 @@ public class Restart : MonoBehaviour
         staticBarIntergers.justiceBar = 0;
         staticBarIntergers.EconomyBar = 30;
         characterManager.currentCharacterIndex = 0;
+        
         // Load spillet igen
         SceneManager.LoadScene("MainScene3.0");
     }

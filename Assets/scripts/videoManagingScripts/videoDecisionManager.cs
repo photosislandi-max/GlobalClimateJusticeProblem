@@ -1,4 +1,3 @@
-// GameDecisionManager.cs
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Video;
@@ -14,20 +13,22 @@ public class videoDecisionManager : MonoBehaviour
     {
         if (Instance != null && Instance != this)
         {
-            Destroy(gameObject); // ensure single instance
+            Destroy(gameObject);  // Ensure single instance
             return;
         }
 
         Instance = this;
         DontDestroyOnLoad(gameObject);
     }
-
-    public void AddNoVideo(VideoClip clip)
+    
+    //Add a video to the queue
+    public void AddVideo(VideoClip clip)
     {
         if (clip != null)
             videosToPlay.Add(clip);
     }
 
+    //Clear the queue of videos
     public void Clear()
     {
         videosToPlay.Clear();

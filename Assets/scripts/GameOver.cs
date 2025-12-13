@@ -16,7 +16,6 @@ public class GameOver : MonoBehaviour
     
     {
         bool charactersDone = manager.currentCharacterIndex == 12;
-
         bool noVideosLeft = videoDecisionManager.Instance.videosToPlay.Count == 0;
     
         if (charactersDone && noVideosLeft || staticBarIntergers.climateBar <= 0)

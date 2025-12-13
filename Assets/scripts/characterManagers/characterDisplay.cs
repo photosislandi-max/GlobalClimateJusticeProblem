@@ -46,23 +46,26 @@ public class characterDisplay : DialougeBaseClass
 
     void Update()
     {
-        var data = Manager.currentCharacter;
+        var data = Manager.currentCharacter; //set current character as local variable
 
-        // Hvis karakteren har ændret sig, start typewriter effekten igen
-      if (data != lastBaseCharacter)
-        {
-        lastBaseCharacter = data;
-        lastCharacterIndex = Manager.currentCharacterIndex; 
-        StopAllCoroutines();
-        StartCoroutine(WriteText(data.issuedescription, issueDescription, tmp_Font));
-        }
+        // if the character has changed, start typewriting the new issue description
+        if (data != lastBaseCharacter)
+            {
+                lastBaseCharacter = data;
+                lastCharacterIndex = Manager.currentCharacterIndex; 
+                StopAllCoroutines();
+                StartCoroutine(WriteText(data.issuedescription, issueDescription, tmp_Font));
+            }
 
         characterArtwork.sprite = data.characterArtwork;
         speechBubbleArtwork.sprite = data.speechBubbleArtwork;
 
         baseCharacter baseChar = Manager.currentCharacter;
         if (baseChar == null)
+        {
             return;
+        }
+
         if (baseChar.chanceToAppear == Manager.RNDChance)
         {
             yeseconomyEffect.text = "+"+ baseChar.yesEconomyBarInt.ToString();

@@ -3,41 +3,23 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public SceneChanger scenechanger;
-    public bool gameRunning = false;
-    public bool isGameOver = false;
     public GameObject endScreen;
-
+    public bool isGameOver = false;
     public GameObject officePanel;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
-    {
-        
-    }
-
-    private void isGameOverCheck()
-    {
-        if (gameRunning == false) return;
-        if (staticBarIntergers.climateBar <= 0)
-        {
-            //game over
-            Debug.Log("Game Over: Climate Bar Depleted");
-            isGameOver = true;
-            // staticBarIntergers.climateBar = 0;
-
-            scenechanger.changeScene(endScreen);
-            // endScreen.SetActive(true);
-        }
-    }
+    {}
 
     // Update is called once per frame
     void Update()
     {
-        if (officePanel.activeSelf == true)
+        if (officePanel.activeSelf == true && staticBarIntergers.climateBar <= 0) // Check if the office panel is active and climate bar is 0 or less (should only trigger when in office and Game Over condition met)
         {
-            gameRunning = true;
-        } else {
-            gameRunning = false;
+            isGameOver = true;
+            scenechanger.changeScene(endScreen);
         }
+
         // Clamp the bar values between 0 and 100
         if (staticBarIntergers.justiceBar > 100)
         {
@@ -59,10 +41,5 @@ public class GameManager : MonoBehaviour
         {
             staticBarIntergers.EconomyBar = 0;
         }
-
-        isGameOverCheck();
-        
-
-        
     }
 }
