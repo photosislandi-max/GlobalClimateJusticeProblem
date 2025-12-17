@@ -66,5 +66,5 @@
     "explorer.fileNesting.patterns": {
         "*.sln": "*.csproj"
     },
-    "dotnet.defaultSolution": "GlobalClimateJusticeProblem.slnx"
+    "dotnet.defaultSolution": "GlobalClimateJusticeProblem1.slnx"
 }
