@@ -3410,7 +3410,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &865039967
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4825,9 +4825,9 @@ MonoBehaviour:
   input: "The world has spoken - and now it\u2019s your turn to decide.          
     You\u2019ve seen what\u2019s at stake, you\u2019ve learned how the forces of
     our planet collide, and the decisions ahead won\u2019t be easy. But remember
-    you\u2019re not just a player. You are the final voice in a global struggle for
-    balance.                           Step forward. Take your seat. Let your judgement
-    shape the future. Are you ready?"
+    you\u2019re not just a player. You\xB4re the final voice in a global struggle
+    for balance.                           Step forward. Take your seat. Let your
+    judgement shape the future. Are you ready?"
   tmp_Font: {fileID: 11400000, guid: 4d97113c8b5ad8e4ea187a70f904ee99, type: 2}
 --- !u!114 &1100151920
 MonoBehaviour:
